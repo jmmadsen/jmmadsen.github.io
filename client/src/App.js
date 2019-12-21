@@ -1,22 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import NavBar from './Components/Header/index.js';
 
 function App() {
   return (
     <div className="App">
+      <NavBar/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          A simple website to introduce myself
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/jmmadsen/jmmadsen.github.io"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Built using React - see my code here
         </a>
       </header>
     </div>
