@@ -13,6 +13,14 @@
   }
 }
 
+.contact-icon {
+  transition: transform .2s;
+}
+
+.contact-icon:hover {
+  transform: scale(1.15);
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

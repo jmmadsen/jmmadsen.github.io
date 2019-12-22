@@ -8,7 +8,7 @@ class About extends Component {
 
     return(
       <header className="App-about">
-        <h2>A Little About Myself</h2>
+        <h1>A Little About Myself</h1>
         <br/>
         <img src={me} alt='Me on the beach' style={{ height: '40vmin', borderRadius: '50%' }}/>
         <br/>
