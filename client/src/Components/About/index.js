@@ -8,9 +8,9 @@ class About extends Component {
 
     return(
       <header className="App-about">
-        <img src={me} alt='Me on the beach' style={{ height: '40vmin', borderRadius: '50%' }}/>
-        <br/>
         <h2>A Little About Myself</h2>
+        <br/>
+        <img src={me} alt='Me on the beach' style={{ height: '40vmin', borderRadius: '50%' }}/>
         <br/>
         <p style={{ paddingLeft: '50px', paddingRight: '50px' }}>I am originally from the Washington D.C. area, 
           but currently live in Brooklyn, New York. In my free time, I enjoy playing pickup 

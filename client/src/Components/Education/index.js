@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 
-class UVA extends Component {
+class Educations extends Component {
 
   render = () => {
 
     return(
-      <header className="App-header">
+      <header className="App-education">
+        <h1>Education</h1>
         <p>UVA</p>
       </header>
     )
@@ -14,4 +15,4 @@ class UVA extends Component {
 
 }
 
-export default UVA;
+export default Educations;

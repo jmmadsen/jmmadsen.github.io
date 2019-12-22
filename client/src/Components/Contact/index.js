@@ -15,7 +15,9 @@ class Contact extends Component {
         <Container>
           <Row>
             <Col xs={4} md={4}>
-              <Image style={{ cursor: 'pointer' }} onClick={() => window.open('mailto:jmmadsen16@gmail.com?subject=Website&body=Let\'s chat.')} src={gmail} rounded/>
+              <a href="mailto:jmmadsen16@gmail.com">
+                <Image src={gmail} rounded/>
+              </a>
             </Col>
             <Col xs={4} md={4}>
               <a href="https://www.linkedin.com/in/jacob-madsen-01604993">

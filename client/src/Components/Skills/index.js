@@ -1,5 +1,17 @@
-import Consulting from './consulting';
-import Finance from './finance';
-import Technical from './technical';
+import React, { Component } from 'react';
 
-export { Consulting, Finance, Technical };
+class Skills extends Component {
+
+  render = () => {
+
+    return(
+      <header className="App-skills">
+        <p>None</p>
+      </header>
+    )
+
+  }
+
+}
+
+export default Skills;
