@@ -1,6 +1,6 @@
 import React from 'react';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import { Route, Switch, BrowserRouter } from 'react-router-dom';
+import { Route, Switch, HashRouter } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
 import './App.css';
 import Home from './Components/Home/index.js';
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Navbar bg="light" expand="lg">
           <LinkContainer exact to='/'><Navbar.Brand>Jacob Madsen</Navbar.Brand></LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -50,7 +50,7 @@ function App() {
           <Route path='/finance' component={Finance}/>
           <Route path='/uva' component={UVA}/>
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
   
