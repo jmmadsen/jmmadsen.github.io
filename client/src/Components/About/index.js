@@ -27,6 +27,8 @@ class About extends Component {
       </header>
     )
 
+    // TODO - ADD CONTACT ME SECTION
+
   }
 
 }
