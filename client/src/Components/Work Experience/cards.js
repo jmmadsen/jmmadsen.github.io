@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Card, Button, Row, Col } from 'react-bootstrap';
 import odot from '../../images/odot.png';
-import odotCopy from '../../images/odot copy.png';
 import usaf from '../../images/usaf.jpg';
 import usps from '../../images/usps.png'
 
@@ -13,7 +12,7 @@ class Cards extends Component {
       <Row>
         <Col>
           <Card bg='dark' style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={odotCopy} />
+            <Card.Img variant="top" src={odot} />
             <Card.Body style={{ backgroundColor: 'white'}}>
               <Button variant='secondary'>ODOT</Button>
             </Card.Body>
