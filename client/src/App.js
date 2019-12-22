@@ -8,6 +8,7 @@ import About from './Components/About/index.js';
 import Experience from './Components/Work Experience/index.js';
 import { Technical, Consulting, Finance } from './Components/Skills/index.js';
 import UVA from './Components/Education/index.js';
+import Contact from './Components/Contact/index.js';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
               <NavDropdown title="Education" id="basic-nav-dropdown">
                 <LinkContainer to='/uva'><NavDropdown.Item>University of Virginia</NavDropdown.Item></LinkContainer>
               </NavDropdown>
+              <LinkContainer to='/contact'><Nav.Link>Contact Me</Nav.Link></LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
@@ -44,6 +46,7 @@ function App() {
           <Route path='/consulting' component={Consulting}/>
           <Route path='/finance' component={Finance}/>
           <Route path='/uva' component={UVA}/>
+          <Route path='/contact' component={Contact}/>
         </Switch>
       </HashRouter>
     </div>

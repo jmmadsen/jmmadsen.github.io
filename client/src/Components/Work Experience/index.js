@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Cards from './cards';
+import USPS from './usps';
 
 class Experience extends Component {
 
@@ -16,6 +17,9 @@ class Experience extends Component {
         </p>
         <br/>
         <Cards/>
+        <br/>
+        <br/>
+        <USPS/>
       </header>
     )
 
