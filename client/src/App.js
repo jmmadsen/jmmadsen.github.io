@@ -11,6 +11,7 @@ import UVA from './Components/Education/index.js';
 
 
 function App() {
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -52,6 +53,7 @@ function App() {
       </BrowserRouter>
     </div>
   );
+  
 }
 
 export default App;
