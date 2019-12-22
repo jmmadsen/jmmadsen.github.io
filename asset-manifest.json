@@ -1,32 +1,38 @@
 {
   "files": {
     "main.css": "/static/css/main.b6d47444.chunk.css",
-    "main.js": "/static/js/main.208ae26b.chunk.js",
-    "main.js.map": "/static/js/main.208ae26b.chunk.js.map",
+    "main.js": "/static/js/main.40eb5a6e.chunk.js",
+    "main.js.map": "/static/js/main.40eb5a6e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1dc66141.js",
     "runtime-main.js.map": "/static/js/runtime-main.1dc66141.js.map",
     "static/css/2.17e5ed98.chunk.css": "/static/css/2.17e5ed98.chunk.css",
-    "static/js/2.0e178bfe.chunk.js": "/static/js/2.0e178bfe.chunk.js",
-    "static/js/2.0e178bfe.chunk.js.map": "/static/js/2.0e178bfe.chunk.js.map",
+    "static/js/2.8860c0bb.chunk.js": "/static/js/2.8860c0bb.chunk.js",
+    "static/js/2.8860c0bb.chunk.js.map": "/static/js/2.8860c0bb.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f9d089c24d1a0ab9e49a6857369f025d.js": "/precache-manifest.f9d089c24d1a0ab9e49a6857369f025d.js",
+    "precache-manifest.5b978829eb6e610740f9521b96b3289d.js": "/precache-manifest.5b978829eb6e610740f9521b96b3289d.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.17e5ed98.chunk.css.map": "/static/css/2.17e5ed98.chunk.css.map",
     "static/css/main.b6d47444.chunk.css.map": "/static/css/main.b6d47444.chunk.css.map",
-    "static/js/2.0e178bfe.chunk.js.LICENSE": "/static/js/2.0e178bfe.chunk.js.LICENSE",
+    "static/js/2.8860c0bb.chunk.js.LICENSE": "/static/js/2.8860c0bb.chunk.js.LICENSE",
+    "static/media/analytics.svg": "/static/media/analytics.122d97d9.svg",
+    "static/media/diagram.svg": "/static/media/diagram.600fcd86.svg",
     "static/media/github.svg": "/static/media/github.e4f2d6b0.svg",
     "static/media/gmail.svg": "/static/media/gmail.23a7dee5.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.14f7b675.svg",
     "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
+    "static/media/manager.svg": "/static/media/manager.a52da8e9.svg",
     "static/media/me.jpg": "/static/media/me.4df0f22d.jpg",
+    "static/media/piggy-bank.svg": "/static/media/piggy-bank.89ab1d72.svg",
+    "static/media/profits.svg": "/static/media/profits.3cf0f82c.svg",
     "static/media/resume.pdf": "/static/media/resume.852d05f2.pdf",
+    "static/media/thinking.svg": "/static/media/thinking.10330522.svg",
     "static/media/uva.png": "/static/media/uva.e0255bba.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1dc66141.js",
     "static/css/2.17e5ed98.chunk.css",
-    "static/js/2.0e178bfe.chunk.js",
+    "static/js/2.8860c0bb.chunk.js",
     "static/css/main.b6d47444.chunk.css",
-    "static/js/main.208ae26b.chunk.js"
+    "static/js/main.40eb5a6e.chunk.js"
   ]
 }
