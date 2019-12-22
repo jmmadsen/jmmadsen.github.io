@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import me from '../../images/me.jpg';
+import resume from './resume.pdf';
 
 class About extends Component {
 
@@ -16,6 +17,13 @@ class About extends Component {
           basketball and trying various restaurants around the city (I am not much of a cook). I also firmly
           believe Season One of True Detective is the best season of television ever made.
         </p>
+        <br/>
+        <a
+          href={ resume }
+          style={{ color: '#61dafb' }}
+          download='Jacob Madsen Resume'>
+          Download My Resume
+        </a>
       </header>
     )
 
