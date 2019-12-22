@@ -12,7 +12,7 @@ class About extends Component {
         <h2>A Little About Myself</h2>
         <br/>
         <p style={{ paddingLeft: '50px', paddingRight: '50px' }}>I am originally from the Washington D.C. area, 
-          but am currently living in Brooklyn, New York. In my free time, I enjoy playing pickup 
+          but currently live in Brooklyn, New York. In my free time, I enjoy playing pickup 
           basketball and trying various restaurants around the city (I am not much of a cook). I also firmly
           believe Season One of True Detective is the best season of television ever made.
         </p>
