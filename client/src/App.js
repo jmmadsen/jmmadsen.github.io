@@ -1,26 +1,48 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Link, Route, Switch, BrowserRouter } from 'react-router-dom';
 import './App.css';
-import NavBar from './Components/Header/index.js';
+import Home from './Components/Home/index.js';
+import About from './Components/About/index.js';
+import { IBM, CGI } from './Components/Work Experience/index.js';
+
 
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          A simple website to introduce myself
-        </p>
-        <a
-          className="App-link"
-          href="https://github.com/jmmadsen/jmmadsen.github.io"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Built using React - see my code here
-        </a>
-      </header>
+      <BrowserRouter>
+        <Navbar bg="light" expand="lg">
+          <Navbar.Brand><Link exact={true} to='/'>Jacob Madsen</Link></Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
+              <Nav.Link><Link to='/about'>About</Link></Nav.Link>
+              <NavDropdown title="Work Experience" id="basic-nav-dropdown">
+                <NavDropdown.Item><Link to='/ibm'>IBM</Link></NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item><Link to='/cgi'>CGI Federal</Link></NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown title="Skills" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#link-to-technology">Technical</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#link-to-consulting">Consulting</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#link-to-finance">Finance</NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown title="Education" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#link-to-uva">University of Virginia</NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+
+        <Switch>
+          <Route exact path='/' render={() => <Home/>}/>
+          <Route path='/about' render={() => <About/>}/>
+          <Route path='/ibm' render={() => <IBM/>}/>
+          <Route path='/cgi' render={() => <CGI/>}/>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
