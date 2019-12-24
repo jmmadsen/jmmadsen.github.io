@@ -30,72 +30,84 @@ class Educations extends Component {
             </Col>
           </Row>
           <br/>
-          <div>
-            <Figure style={{ display: 'inline-block' }}>
-              <Figure.Image
-                width={70}
-                height={30}
-                alt="171x180"
-                src={theory}
-              />
-            </Figure>
-            <p>Theory of Financial Markets</p>
-          </div>
-          <div>
-            <Figure style={{ display: 'inline-block' }}>
-              <Figure.Image
-                width={70}
-                height={30}
-                alt="171x180"
-                src={behavioral}
-              />
-            </Figure>
-            <p>Behavioral Finance</p>
-          </div>
-          <div>
-            <Figure style={{ display: 'inline-block' }}>
-              <Figure.Image
-                width={75}
-                height={35}
-                alt="171x180"
-                src={bank}
-              />
-            </Figure>
-            <p>Money and Banking</p>
-          </div>
-          <div>
-            <Figure style={{ display: 'inline-block' }}>
-              <Figure.Image
-                width={70}
-                height={30}
-                alt="171x180"
-                src={economics}
-              />
-            </Figure>
-            <p>Microeconomics and Macroeconomics</p>
-          </div>
-          <div>
-            <Figure style={{ display: 'inline-block' }}>
-              <Figure.Image
-                width={70}
-                height={30}
-                alt="171x180"
-                src={statistics}
-              />
-            </Figure>
-            <p>Statistics and Econometrics</p>
-          </div>
-          <div>
-            <Figure style={{ display: 'inline-block' }}>
-              <Figure.Image
-                width={70}
-                height={30}
-                alt="171x180"
-                src={project}
-              />
-            </Figure>
-            <p>Project Management</p>
-          </div>
+          <Row>
+            <Col md={6} xs={6}>
+              <Figure>
+                <Figure.Image
+                  width={70}
+                  height={30}
+                  src={theory}
+                />
+                <Figure.Caption style={{ color: 'white' }}>
+                  Theory of Financial Markets
+                </Figure.Caption>
+              </Figure>
+            </Col>
+            <Col md={6} xs={6}>
+              <Figure>
+                <Figure.Image
+                  width={70}
+                  height={30}
+                  src={behavioral}
+                />
+                <Figure.Caption style={{ color: 'white' }}>
+                  Behavioral Finance
+                </Figure.Caption>
+              </Figure>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={6} xs={6}>
+              <Figure style={{ display: 'inline-block' }}>
+                <Figure.Image
+                  width={75}
+                  height={35}
+                  src={bank}
+                />
+                <Figure.Caption style={{ color: 'white' }}>
+                  Money and Banking
+                </Figure.Caption>
+              </Figure>
+            </Col>
+            <Col md={6} xs={6}>
+              <Figure style={{ display: 'inline-block' }}>
+                <Figure.Image
+                  width={70}
+                  height={30}
+                  src={economics}
+                />
+                <Figure.Caption style={{ color: 'white' }}>
+                  Microeconomics and Macroeconomics
+                </Figure.Caption>
+              </Figure>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={6} xs={6}>
+              <Figure style={{ display: 'inline-block' }}>
+                <Figure.Image
+                  width={70}
+                  height={30}
+                  src={statistics}
+                />
+                <Figure.Caption style={{ color: 'white' }}>
+                  Statistics and Econometrics
+                </Figure.Caption>
+              </Figure>
+            </Col>
+            <Col md={6} xs={6}>
+              <Figure style={{ display: 'inline-block' }}>
+                <Figure.Image
+                  width={70}
+                  height={30}
+                  src={project}
+                />
+                <Figure.Caption style={{ color: 'white' }}>
+                  Project Management
+                </Figure.Caption>
+              </Figure>
+            </Col>
+          </Row>
           <div style={{ fontSize: '8px' }}>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </Container>
       </header>
