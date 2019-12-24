@@ -22,8 +22,8 @@ function App() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <LinkContainer to='/about'><Nav.Link>About</Nav.Link></LinkContainer>
-              <LinkContainer to='/experience'><Nav.Link>Work Experience</Nav.Link></LinkContainer>
               <LinkContainer to='/skills'><Nav.Link>Skills</Nav.Link></LinkContainer>
+              <LinkContainer to='/experience'><Nav.Link>Work Experience</Nav.Link></LinkContainer>
               <LinkContainer to='/education'><Nav.Link>Education</Nav.Link></LinkContainer>
               <LinkContainer to='/contact'><Nav.Link>Contact Me</Nav.Link></LinkContainer>
             </Nav>

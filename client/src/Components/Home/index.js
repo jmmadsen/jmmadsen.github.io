@@ -8,7 +8,7 @@ class Home extends Component {
 
     return (
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo"/>
         <Container>
           <Row>
             <Col md={12} xs={12}>
@@ -25,7 +25,7 @@ class Home extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Click here to see my code
+                Built using React - click here to see my code
               </a>
             </Col>
           </Row>
