@@ -70,7 +70,7 @@ class Technical extends Component {
               </Row>
               <br/>
               <p>
-                Work with JavaScript on a daily basis, and have on project 
+                I work with JavaScript on a daily basis, and have on project 
                 experience implementing a real-time analytics dashboard through React. I also built
                 this website myself.
               </p>
@@ -118,7 +118,7 @@ class Technical extends Component {
               </Row>
               <br/>
               <p>
-                Very familiar with using Node.js and Express to build APIs. I also 
+                I am very familiar with using Node.js and Express to build APIs. I also 
                 have experience with database design and management through Postgresql.
               </p>
             </Col>
@@ -165,7 +165,7 @@ class Technical extends Component {
               </Row>
               <br/>
               <p>
-                Comfortable analyzing large datasets using SQL and Pandas/NumPy. I also have experience automating routine tasks
+                I am comfortable analyzing large datasets using SQL and Pandas/NumPy. I also have experience automating routine tasks
                 through Python and VBA.
               </p>
             </Col>
@@ -221,7 +221,7 @@ class Technical extends Component {
               </Row>
               <br/>
               <p>
-                Experienced in modern software development tools, processes, and best practices. Understand and
+                I am experienced in modern software development tools, processes, and best practices. I understand and
                 regularly work with microserviced architecture.
               </p>
             </Col>

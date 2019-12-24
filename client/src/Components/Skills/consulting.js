@@ -31,7 +31,7 @@ class Consulting extends Component {
               <br/>
               <Row>
                 <Col md={4} xs={4}>
-                  <Figure style={{ display: 'inline-block', minHeight: '140px' }}>
+                  <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
                       height={90}
@@ -40,7 +40,7 @@ class Consulting extends Component {
                   </Figure>
                 </Col>
                 <Col md={4} xs={4}>
-                  <Figure style={{ display: 'inline-block', minHeight: '140px' }}>
+                  <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
                       height={90}
@@ -49,7 +49,7 @@ class Consulting extends Component {
                   </Figure>
                 </Col>
                 <Col md={4} xs={4}>
-                  <Figure style={{ display: 'inline-block', minHeight: '140px' }}>
+                  <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
                       height={90}
@@ -60,8 +60,8 @@ class Consulting extends Component {
               </Row>
               <br/>
               <p>
-                Experience managing teams of up to 6 members as a team lead. Also, I
-                have upskilled new members from scratch (React, SQL).
+                I manage teams of up to 6 members as a team lead. Also, I
+                have mentored and taught new members subjects from scratch (React, SQL).
               </p>
             </Col>
           </div>
@@ -98,7 +98,7 @@ class Consulting extends Component {
               </Row>
               <br/>
               <p>
-                Extensive experience working with clients through various projects. I am very comfortable
+                I have extensive experience working with clients through various projects. I am very comfortable
                 presenting to all stakeholders, and communicating on behalf of the team. 
               </p>
             </Col>
@@ -145,7 +145,7 @@ class Consulting extends Component {
               </Row>
               <br/>
               <p>
-                Well-versed in MS Office. Capable of writing VBA for spreadsheet automation, and
+                I am well-versed in MS Office. Capable of writing VBA for spreadsheet automation, and
                 designing professional slides for presentations and software wireframes.
               </p>
             </Col>
@@ -192,8 +192,8 @@ class Consulting extends Component {
               </Row>
               <br/>
               <p>
-                Been involved in pre-proposal research and projection through both IBM and personal endeavors. 
-                Knowledgable in Federal procurement processes.
+                I have been involved in pre-proposal research and projection through both IBM and personal endeavors. 
+                I am knowledgable in Federal procurement processes.
               </p>
             </Col>
           </div>
