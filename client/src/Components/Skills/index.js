@@ -14,12 +14,6 @@ class Skills extends Component {
     }
   }
 
-  buttonClick = (name) => {
-
-    this.setState({ selectedButton: name });
-
-  }
-
   render = () => {
 
     return(
@@ -35,7 +29,7 @@ class Skills extends Component {
                   size='lg' 
                   variant="outline-primary"
                   active={ this.state.selectedButton === 'technical' }
-                  onClick={ () => this.buttonClick('technical') }
+                  onClick={ () => this.setState({ selectedButton: 'technical' }) }
                 >
                   Technical
                 </Button>
@@ -44,7 +38,7 @@ class Skills extends Component {
                   size='lg' 
                   variant="outline-primary"
                   active={ this.state.selectedButton === 'consulting' }
-                  onClick={ () => this.buttonClick('consulting') }
+                  onClick={ () => this.setState({ selectedButton: 'consulting'}) }
                 >
                   Consulting
                 </Button>
@@ -53,7 +47,7 @@ class Skills extends Component {
                   size='lg' 
                   variant="outline-primary"
                   active={ this.state.selectedButton === 'finance' }
-                  onClick={ () => this.buttonClick('finance') }
+                  onClick={ () => this.setState({ selectedButton: 'finance' }) }
                 >
                   Finance
                 </Button>

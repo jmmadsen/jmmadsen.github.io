@@ -23,8 +23,7 @@ class About extends Component {
             <Col md={12} xs={12}>
               <p>I am originally from the Washington D.C. area, 
                 but currently live in Brooklyn, New York. In my free time, I enjoy playing pickup 
-                basketball and trying various restaurants around the city (I am not much of a cook). I also firmly
-                believe Season One of True Detective is the best season of television ever made.
+                basketball and trying various restaurants around the city (I am not much of a cook).
               </p>
             </Col>
           </Row>
