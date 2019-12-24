@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "27d10b5ef5d73abf51e397c4e8ab486a",
+    "revision": "db94827c3272da19344b101c47de2d98",
     "url": "/index.html"
   },
   {
-    "revision": "7270b4dac112e9e82da4",
+    "revision": "e9cca3585eb8a3958e87",
     "url": "/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "fd7b7d34493d8534c41d",
+    "revision": "a08718f426ae64f11e26",
     "url": "/static/css/main.b6d47444.chunk.css"
   },
   {
-    "revision": "7270b4dac112e9e82da4",
-    "url": "/static/js/2.6ac98941.chunk.js"
+    "revision": "e9cca3585eb8a3958e87",
+    "url": "/static/js/2.2bc663f9.chunk.js"
   },
   {
     "revision": "86afaa925e0f432774bf95b19b6933fb",
-    "url": "/static/js/2.6ac98941.chunk.js.LICENSE"
+    "url": "/static/js/2.2bc663f9.chunk.js.LICENSE"
   },
   {
-    "revision": "fd7b7d34493d8534c41d",
-    "url": "/static/js/main.a6a1f009.chunk.js"
+    "revision": "a08718f426ae64f11e26",
+    "url": "/static/js/main.d3759321.chunk.js"
   },
   {
     "revision": "6b3defdcd169e5f902d5",
@@ -40,8 +40,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/diagram.600fcd86.svg"
   },
   {
+    "revision": "4c5ed89490f07b7be7f4e6d496060f5f",
+    "url": "/static/media/docker.4c5ed894.png"
+  },
+  {
     "revision": "e4f2d6b028d93b8c7988d2132bf13ca2",
     "url": "/static/media/github.e4f2d6b0.svg"
+  },
+  {
+    "revision": "208802a39cd19b417e2345f9aa89bccf",
+    "url": "/static/media/gitlab.208802a3.png"
   },
   {
     "revision": "23a7dee5995afbb2f9ad3b32799c6f82",
@@ -72,6 +80,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/nodejs.55e83371.png"
   },
   {
+    "revision": "160a85a439bec144b8f13bee25351ace",
+    "url": "/static/media/npm.160a85a4.png"
+  },
+  {
+    "revision": "7fc5e736cd31a9056ddac020d1799f3b",
+    "url": "/static/media/octocat.7fc5e736.png"
+  },
+  {
     "revision": "89ab1d7224389bdb86915eb27dbf4db0",
     "url": "/static/media/piggy-bank.89ab1d72.svg"
   },
@@ -84,6 +100,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/profits.3cf0f82c.svg"
   },
   {
+    "revision": "6679777ee798566d3852fe589dea1517",
+    "url": "/static/media/python.6679777e.png"
+  },
+  {
     "revision": "47ce6e77f039020ee2e76a10c1e988e9",
     "url": "/static/media/react.47ce6e77.png"
   },
@@ -94,6 +114,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "852d05f2bf9358ddacfe188310603be8",
     "url": "/static/media/resume.852d05f2.pdf"
+  },
+  {
+    "revision": "8956e826913f0f091f756ab9c6e03a42",
+    "url": "/static/media/sql.8956e826.png"
   },
   {
     "revision": "103305228f28a6d27f338ea2daf53002",
