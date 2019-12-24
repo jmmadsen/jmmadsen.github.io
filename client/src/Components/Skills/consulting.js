@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Figure } from 'react-bootstrap';
-import octocat from '../../images/octocat.png';
-import npm from '../../images/npm.png';
-import gitlab from '../../images/gitlab.png';
-import docker from '../../images/docker.png';
+import mentoring from '../../images/mentoring.png';
+import leadership1 from '../../images/leadership1.png';
+import leadership2 from '../../images/leadership2.png';
 import client from '../../images/client.png';
 import presentation from '../../images/presentation.png';
 import word from '../../images/word.png';
@@ -12,6 +11,8 @@ import powerpoint from '../../images/powerpoint.png';
 import bd1 from '../../images/bd1.png';
 import bd2 from '../../images/bd2.png';
 import bd3 from '../../images/bd3.png';
+
+//TODO: cache images for faster loading (use a CDN and utilize caching)
 
 class Consulting extends Component {
 
@@ -22,6 +23,53 @@ class Consulting extends Component {
         <br/>
         <Row>
           <div>
+          <br/>
+            <Col md={12} xs={12}>
+              <h2>
+                Leadership and Mentoring
+              </h2>
+              <br/>
+              <Row>
+                <Col md={4} xs={4}>
+                  <Figure style={{ display: 'inline-block', minHeight: '140px' }}>
+                    <Figure.Image
+                      width={140}
+                      height={90}
+                      src={mentoring}
+                    />
+                  </Figure>
+                </Col>
+                <Col md={4} xs={4}>
+                  <Figure style={{ display: 'inline-block', minHeight: '140px' }}>
+                    <Figure.Image
+                      width={140}
+                      height={90}
+                      src={leadership1}
+                    />
+                  </Figure>
+                </Col>
+                <Col md={4} xs={4}>
+                  <Figure style={{ display: 'inline-block', minHeight: '140px' }}>
+                    <Figure.Image
+                      width={140}
+                      height={90}
+                      src={leadership2}
+                    />
+                  </Figure>
+                </Col>
+              </Row>
+              <br/>
+              <p>
+                Experience managing teams of up to 6 members as a team lead. Also, I
+                have upskilled new members from scratch (React, SQL).
+              </p>
+            </Col>
+          </div>
+        </Row>
+        <br/>
+        <Row>
+          <div>
+          <hr style={{ border: '3px solid #28A745' }}/>
           <br/>
             <Col md={12} xs={12}>
               <h2>
@@ -50,7 +98,7 @@ class Consulting extends Component {
               </Row>
               <br/>
               <p>
-                I have extensive experience working with clients through various projects. I am very comfortable
+                Extensive experience working with clients through various projects. I am very comfortable
                 presenting to all stakeholders, and communicating on behalf of the team. 
               </p>
             </Col>

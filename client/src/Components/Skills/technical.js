@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Figure } from 'react-bootstrap';
-import js from '../../images/js.png';
+import js from '../../images/js.svg';
 import react from '../../images/react.png';
 import html from '../../images/html.png';
 import css from '../../images/css.png';
@@ -70,7 +70,7 @@ class Technical extends Component {
               </Row>
               <br/>
               <p>
-                I work with JavaScript on a daily basis, and have on project 
+                Work with JavaScript on a daily basis, and have on project 
                 experience implementing a real-time analytics dashboard through React. I also built
                 this website myself.
               </p>
@@ -118,7 +118,7 @@ class Technical extends Component {
               </Row>
               <br/>
               <p>
-                I am very familiar with using Node.js and Express to build APIs. I also 
+                Very familiar with using Node.js and Express to build APIs. I also 
                 have experience with database design and management through Postgresql.
               </p>
             </Col>
