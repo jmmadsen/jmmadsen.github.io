@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e147500b48c63de779126cf4b12faaa5",
+    "revision": "e1f9efb17b0539b69e80d5b3486fb357",
     "url": "/index.html"
   },
   {
-    "revision": "1864b2f52dc3ed59bd62",
+    "revision": "9cbd544a9a2d3ab2c3a2",
     "url": "/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "59a7da01922fc4280885",
+    "revision": "2810686e6bb9ba811113",
     "url": "/static/css/main.b6d47444.chunk.css"
   },
   {
-    "revision": "1864b2f52dc3ed59bd62",
-    "url": "/static/js/2.9693de63.chunk.js"
+    "revision": "9cbd544a9a2d3ab2c3a2",
+    "url": "/static/js/2.7101ed7a.chunk.js"
   },
   {
     "revision": "86afaa925e0f432774bf95b19b6933fb",
-    "url": "/static/js/2.9693de63.chunk.js.LICENSE"
+    "url": "/static/js/2.7101ed7a.chunk.js.LICENSE"
   },
   {
-    "revision": "59a7da01922fc4280885",
-    "url": "/static/js/main.92c48b0d.chunk.js"
+    "revision": "2810686e6bb9ba811113",
+    "url": "/static/js/main.8b98458d.chunk.js"
   },
   {
     "revision": "6b3defdcd169e5f902d5",
@@ -116,12 +116,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/npm.160a85a4.png"
   },
   {
+    "revision": "9a0cbf303de3435e972214a6738ff1d0",
+    "url": "/static/media/nyse.9a0cbf30.png"
+  },
+  {
     "revision": "7fc5e736cd31a9056ddac020d1799f3b",
     "url": "/static/media/octocat.7fc5e736.png"
   },
   {
     "revision": "89ab1d7224389bdb86915eb27dbf4db0",
     "url": "/static/media/piggy-bank.89ab1d72.svg"
+  },
+  {
+    "revision": "97d10bb9c1a7f74506000db7f2c58519",
+    "url": "/static/media/portfolio.97d10bb9.png"
   },
   {
     "revision": "d22ccb852907f0e57a8fc291d70b642c",
@@ -156,8 +164,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/resume.852d05f2.pdf"
   },
   {
+    "revision": "4fed3e8c348e7e9762a35ac91148bac6",
+    "url": "/static/media/robinhood.4fed3e8c.svg"
+  },
+  {
     "revision": "8956e826913f0f091f756ab9c6e03a42",
     "url": "/static/media/sql.8956e826.png"
+  },
+  {
+    "revision": "108ebbbbf35e2bea8106ad3fe0c4bce8",
+    "url": "/static/media/supplydemand.108ebbbb.png"
   },
   {
     "revision": "103305228f28a6d27f338ea2daf53002",
