@@ -71,7 +71,8 @@ class Technical extends Component {
               <br/>
               <p>
                 I work with JavaScript on a daily basis, and have on project 
-                experience implementing a real-time analytics dashboard through React.  
+                experience implementing a real-time analytics dashboard through React. I also built
+                this website myself.
               </p>
             </Col>
           </div>

@@ -62,9 +62,6 @@ class Skills extends Component {
             ? <Consulting/> 
             : <Finance/>
           }
-          {/* Detailed Knowledge
-          Working Knowledge
-          Conceptual Knowledge */}
         </Container>
       </header>
     )
