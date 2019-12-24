@@ -10,7 +10,8 @@ class Skills extends Component {
     super(props);
 
     this.state = {
-      selectedButton: 'technical'
+      selectedButton: 'technical',
+      colorScheme: 'outline-primary'
     }
   }
 
@@ -27,27 +28,27 @@ class Skills extends Component {
                 <Button 
                   style={{ margin: '10px' }} 
                   size='lg' 
-                  variant="outline-primary"
+                  variant={this.state.colorScheme}
                   active={ this.state.selectedButton === 'technical' }
-                  onClick={ () => this.setState({ selectedButton: 'technical' }) }
+                  onClick={ () => this.setState({ selectedButton: 'technical', colorScheme: 'outline-primary' }) }
                 >
                   Technical
                 </Button>
                 <Button 
                   style={{ margin: '10px' }} 
                   size='lg' 
-                  variant="outline-primary"
+                  variant={this.state.colorScheme}
                   active={ this.state.selectedButton === 'consulting' }
-                  onClick={ () => this.setState({ selectedButton: 'consulting'}) }
+                  onClick={ () => this.setState({ selectedButton: 'consulting', colorScheme: 'outline-success' }) }
                 >
                   Consulting
                 </Button>
                 <Button 
                   style={{ margin: '10px' }} 
                   size='lg' 
-                  variant="outline-primary"
+                  variant={this.state.colorScheme}
                   active={ this.state.selectedButton === 'finance' }
-                  onClick={ () => this.setState({ selectedButton: 'finance' }) }
+                  onClick={ () => this.setState({ selectedButton: 'finance', colorScheme: 'outline-danger' }) }
                 >
                   Finance
                 </Button>
