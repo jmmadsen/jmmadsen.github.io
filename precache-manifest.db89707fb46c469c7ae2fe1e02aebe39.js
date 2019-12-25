@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "50ca1b5e00a93b857fcff1e214fd2a87",
+    "revision": "acb32c10bf34791ab8db658fd603b9f1",
     "url": "/index.html"
   },
   {
-    "revision": "9cbd544a9a2d3ab2c3a2",
+    "revision": "4f533cfd7c65b0c547d0",
     "url": "/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "e30f6f9b7c0ef623d02c",
+    "revision": "d7f7193421242d526768",
     "url": "/static/css/main.b6d47444.chunk.css"
   },
   {
-    "revision": "9cbd544a9a2d3ab2c3a2",
-    "url": "/static/js/2.7101ed7a.chunk.js"
+    "revision": "4f533cfd7c65b0c547d0",
+    "url": "/static/js/2.35e8d046.chunk.js"
   },
   {
     "revision": "86afaa925e0f432774bf95b19b6933fb",
-    "url": "/static/js/2.7101ed7a.chunk.js.LICENSE"
+    "url": "/static/js/2.35e8d046.chunk.js.LICENSE"
   },
   {
-    "revision": "e30f6f9b7c0ef623d02c",
-    "url": "/static/js/main.e2ecdd2a.chunk.js"
+    "revision": "d7f7193421242d526768",
+    "url": "/static/js/main.31db820b.chunk.js"
   },
   {
     "revision": "6b3defdcd169e5f902d5",
@@ -76,6 +76,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/gmail.23a7dee5.svg"
   },
   {
+    "revision": "493f322eec7d2bd7c9d0a18f3220270d",
+    "url": "/static/media/ibmcloud.493f322e.png"
+  },
+  {
     "revision": "eeeb54178b0817c65fa0d2c1e59df11a",
     "url": "/static/media/js.eeeb5417.svg"
   },
@@ -102,6 +106,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4df0f22dd1493fef825bbfc0937aa381",
     "url": "/static/media/me.4df0f22d.jpg"
+  },
+  {
+    "revision": "64a2967e489fc67c0d94bf7f2223e267",
+    "url": "/static/media/meeting.64a2967e.png"
   },
   {
     "revision": "51483d17c58d9361f6718cbdf1cebdf4",
@@ -178,6 +186,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "103305228f28a6d27f338ea2daf53002",
     "url": "/static/media/thinking.10330522.svg"
+  },
+  {
+    "revision": "f457f6fe00099a19d8347931f89840b3",
+    "url": "/static/media/trading.f457f6fe.png"
   },
   {
     "revision": "e0255bba4b472130eeafb734cf3c2e7a",
