@@ -10,7 +10,6 @@ import Skills from './Components/Skills/index.js';
 import Education from './Components/Education/index.js';
 import Contact from './Components/Contact/index.js';
 
-
 function App() {
 
   return (

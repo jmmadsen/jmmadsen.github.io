@@ -5,6 +5,7 @@ import portfolio from '../../images/portfolio.png';
 import nyse from '../../images/nyse.png';
 import python from '../../images/python.png';
 import robinhood from '../../images/robinhood.svg';
+import trading from '../../images/trading.png';
 
 class Finance extends Component {
 
@@ -52,8 +53,8 @@ class Finance extends Component {
               </Row>
               <br/>
               <p>
-                I enjoy staying updated with daily market news and moves, and larger economic trends. I also
-                research strategies for actively managing my own portfolio.
+                I enjoy staying up-to-date with market news and research, and larger economic trends. I also
+                study strategies for actively managing my own portfolio.
               </p>
             </Col>
           </div>
@@ -69,7 +70,7 @@ class Finance extends Component {
               </h2>
               <br/>
               <Row>
-                <Col md={6} xs={6}>
+                <Col md={4} xs={4}>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -78,7 +79,7 @@ class Finance extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={6} xs={6}>
+                <Col md={4} xs={4}>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -87,11 +88,20 @@ class Finance extends Component {
                     />
                   </Figure>
                 </Col>
+                <Col md={4} xs={4}>
+                  <Figure style={{ display: 'inline-block' }}>
+                    <Figure.Image
+                      width={140}
+                      height={90}
+                      src={trading}
+                    />
+                  </Figure>
+                </Col>
               </Row>
               <br/>
               <p>
                 I am currently using Python and the Robinhood API (no trading fees) to
-                 create an automated derivatives trading app.
+                 create an automated options trading app.
               </p>
             </Col>
           </div>

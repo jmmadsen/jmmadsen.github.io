@@ -14,6 +14,7 @@ import octocat from '../../images/octocat.png';
 import npm from '../../images/npm.png';
 import gitlab from '../../images/gitlab.png';
 import docker from '../../images/docker.png';
+import ibmcloud from '../../images/ibmcloud.png';
 
 class Technical extends Component {
 
@@ -70,9 +71,8 @@ class Technical extends Component {
               </Row>
               <br/>
               <p>
-                I work with JavaScript on a daily basis, and have on project 
-                experience implementing a real-time analytics dashboard through React. I also built
-                this website myself.
+                I use JavaScript on a daily basis, and have experience building websites and 
+                user interfaces with React (including this website).
               </p>
             </Col>
           </div>
@@ -88,7 +88,7 @@ class Technical extends Component {
               </h2>
               <br/>
               <Row>
-                <Col md={4} xs={4}>
+                <Col md={3} xs={3}>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -97,16 +97,7 @@ class Technical extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={4} xs={4}>
-                  <Figure style={{ display: 'inline-block' }}>
-                    <Figure.Image
-                      width={140}
-                      height={90}
-                      src={rest}
-                    />
-                  </Figure>
-                </Col>
-                <Col md={4} xs={4}>
+                <Col md={3} xs={3}>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -115,11 +106,29 @@ class Technical extends Component {
                     />
                   </Figure>
                 </Col>
+                <Col md={3} xs={3}>
+                  <Figure style={{ display: 'inline-block' }}>
+                    <Figure.Image
+                      width={140}
+                      height={90}
+                      src={ibmcloud}
+                    />
+                  </Figure>
+                </Col>
+                <Col md={3} xs={3}>
+                  <Figure style={{ display: 'inline-block' }}>
+                    <Figure.Image
+                      width={140}
+                      height={90}
+                      src={rest}
+                    />
+                  </Figure>
+                </Col>
               </Row>
               <br/>
               <p>
                 I am very familiar with using Node.js and Express to build APIs. I also 
-                have experience with database design and management through Postgresql.
+                have experience with database design and management using PostgreSQL.
               </p>
             </Col>
           </div>
@@ -165,8 +174,8 @@ class Technical extends Component {
               </Row>
               <br/>
               <p>
-                I am comfortable analyzing large datasets using SQL and Pandas/NumPy. I also have experience automating routine tasks
-                through Python and VBA.
+                I am comfortable analyzing large datasets using SQL and Python (Pandas/NumPy). I also have 
+                experience automating routine tasks with Python and VBA.
               </p>
             </Col>
           </div>
@@ -196,7 +205,7 @@ class Technical extends Component {
                     <Figure.Image
                       width={140}
                       height={90}
-                      src={npm}
+                      src={docker}
                     />
                   </Figure>
                 </Col>
@@ -214,7 +223,7 @@ class Technical extends Component {
                     <Figure.Image
                       width={140}
                       height={90}
-                      src={docker}
+                      src={npm}
                     />
                   </Figure>
                 </Col>
