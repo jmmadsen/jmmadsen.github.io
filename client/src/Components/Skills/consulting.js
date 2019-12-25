@@ -25,13 +25,13 @@ class Consulting extends Component {
         <Row>
           <div>
           <br/>
-            <Col md={12} xs={12}>
+            <Col>
               <h2>
                 Leadership and Mentoring
               </h2>
               <br/>
               <Row>
-                <Col md={4} xs={4}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -40,7 +40,7 @@ class Consulting extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={4} xs={4}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -49,7 +49,7 @@ class Consulting extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={4} xs={4}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -72,13 +72,13 @@ class Consulting extends Component {
           <div>
           <hr style={{ border: '3px solid #28A745' }}/>
           <br/>
-            <Col md={12} xs={12}>
+            <Col>
               <h2>
                 Client Relationships and Presentations
               </h2>
               <br/>
               <Row>
-                <Col md={4} xs={4}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -87,7 +87,7 @@ class Consulting extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={4} xs={4}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -96,7 +96,7 @@ class Consulting extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={4} xs={4}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -119,13 +119,13 @@ class Consulting extends Component {
           <div>
           <hr style={{ border: '3px solid #28A745' }}/>
           <br/>
-            <Col md={12} xs={12}>
+            <Col>
               <h2>
                 Business Development
               </h2>
               <br/>
               <Row>
-                <Col md={4} xs={4}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -134,7 +134,7 @@ class Consulting extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={4} xs={4}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -143,7 +143,7 @@ class Consulting extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={4} xs={4}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -166,13 +166,13 @@ class Consulting extends Component {
           <div>
           <hr style={{ border: '3px solid #28A745' }}/>
           <br/>
-            <Col md={12} xs={12}>
+            <Col>
               <h2>
                 Microsoft Office
               </h2>
               <br/>
               <Row>
-                <Col md={4} xs={4}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -181,7 +181,7 @@ class Consulting extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={4} xs={4}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -190,7 +190,7 @@ class Consulting extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={4} xs={4}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}

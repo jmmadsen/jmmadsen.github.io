@@ -22,7 +22,7 @@ class Educations extends Component {
           <p>University of Virginia</p>
           <br/>
           <Row>
-            <Col md={12} xs={12}>
+            <Col>
               <p>
                 I studied at UVA from 2012 - 2016, where I majored in Economics and minored in Leadership Studies.
                 Below is a list of my relevant coursework.
@@ -31,7 +31,7 @@ class Educations extends Component {
           </Row>
           <br/>
           <Row>
-            <Col md={6} xs={6}>
+            <Col>
               <Figure>
                 <Figure.Image
                   width={70}
@@ -43,7 +43,7 @@ class Educations extends Component {
                 </Figure.Caption>
               </Figure>
             </Col>
-            <Col md={6} xs={6}>
+            <Col>
               <Figure>
                 <Figure.Image
                   width={70}
@@ -57,7 +57,7 @@ class Educations extends Component {
             </Col>
           </Row>
           <Row>
-            <Col md={6} xs={6}>
+            <Col>
               <Figure style={{ display: 'inline-block' }}>
                 <Figure.Image
                   width={75}
@@ -69,7 +69,7 @@ class Educations extends Component {
                 </Figure.Caption>
               </Figure>
             </Col>
-            <Col md={6} xs={6}>
+            <Col>
               <Figure style={{ display: 'inline-block' }}>
                 <Figure.Image
                   width={70}
@@ -83,7 +83,7 @@ class Educations extends Component {
             </Col>
           </Row>
           <Row>
-            <Col md={6} xs={6}>
+            <Col>
               <Figure style={{ display: 'inline-block' }}>
                 <Figure.Image
                   width={70}
@@ -95,7 +95,7 @@ class Educations extends Component {
                 </Figure.Caption>
               </Figure>
             </Col>
-            <Col md={6} xs={6}>
+            <Col>
               <Figure style={{ display: 'inline-block' }}>
                 <Figure.Image
                   width={70}

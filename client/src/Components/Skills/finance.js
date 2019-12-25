@@ -17,13 +17,13 @@ class Finance extends Component {
         <Row>
           <div>
           <br/>
-            <Col md={12} xs={12}>
+            <Col>
               <h2>
                 Markets and Investing
               </h2>
               <br/>
               <Row>
-                <Col md={4} xs={4}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -32,7 +32,7 @@ class Finance extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={4} xs={4}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -41,7 +41,7 @@ class Finance extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={4} xs={4}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -64,13 +64,13 @@ class Finance extends Component {
           <div>
           <hr style={{ border: '3px solid #DC3545' }}/>
           <br/>
-            <Col md={12} xs={12}>
+            <Col>
               <h2>
                 Porftolio Automation
               </h2>
               <br/>
               <Row>
-                <Col md={4} xs={4}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -79,7 +79,7 @@ class Finance extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={4} xs={4}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -88,7 +88,7 @@ class Finance extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={4} xs={4}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}

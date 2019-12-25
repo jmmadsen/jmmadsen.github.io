@@ -23,7 +23,7 @@ class Skills extends Component {
           <h1>Skills</h1>
           <br/>
           <Row>
-            <Col md={12} xs={12}>
+            <Col>
               <ButtonToolbar style={{ justifyContent: 'center' }}>
                 <Button 
                   style={{ margin: '10px' }} 

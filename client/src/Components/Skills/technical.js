@@ -26,13 +26,13 @@ class Technical extends Component {
         <Row>
           <div>
           <br/>
-            <Col md={12} xs={12}>
+            <Col>
               <h2>
                 Front-End
               </h2>
               <br/>
               <Row>
-                <Col md={3} xs={3}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -41,7 +41,7 @@ class Technical extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={3} xs={3}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -50,7 +50,7 @@ class Technical extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={3} xs={3}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -59,7 +59,7 @@ class Technical extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={3} xs={3}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -82,13 +82,13 @@ class Technical extends Component {
           <div>
           <hr style={{ border: '3px solid #007BFF' }}/>
           <br/>
-            <Col md={12} xs={12}>
+            <Col>
               <h2>
                 Back-End
               </h2>
               <br/>
               <Row>
-                <Col md={3} xs={3}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -97,7 +97,7 @@ class Technical extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={3} xs={3}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -106,7 +106,7 @@ class Technical extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={3} xs={3}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -115,7 +115,7 @@ class Technical extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={3} xs={3}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -138,13 +138,13 @@ class Technical extends Component {
           <div>
           <hr style={{ border: '3px solid #007BFF' }}/>
           <br/>
-            <Col md={12} xs={12}>
+            <Col>
               <h2>
                 Data Analytics and Automation
               </h2>
               <br/>
               <Row>
-                <Col md={4} xs={4}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -153,7 +153,7 @@ class Technical extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={4} xs={4}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -162,7 +162,7 @@ class Technical extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={4} xs={4}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -185,13 +185,13 @@ class Technical extends Component {
           <div>
           <hr style={{ border: '3px solid #007BFF' }}/>
           <br/>
-            <Col md={12} xs={12}>
+            <Col>
               <h2>
                 Developer Tools
               </h2>
               <br/>
               <Row>
-                <Col md={3} xs={3}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -200,7 +200,7 @@ class Technical extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={3} xs={3}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -209,7 +209,7 @@ class Technical extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={3} xs={3}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}
@@ -218,7 +218,7 @@ class Technical extends Component {
                     />
                   </Figure>
                 </Col>
-                <Col md={3} xs={3}>
+                <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
                       width={140}

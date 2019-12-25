@@ -11,7 +11,7 @@ class About extends Component {
       <header className="App-about">
         <Container>
           <Row>
-            <Col md={12} xs={12}>
+            <Col>
               <h1>A Little About Myself</h1>
             </Col>
           </Row>
@@ -20,7 +20,7 @@ class About extends Component {
           <br/>
           <br/>
           <Row>
-            <Col md={12} xs={12}>
+            <Col>
               <p>I am originally from the Washington D.C. area, 
                 but currently live in Brooklyn, New York. In my free time, I enjoy playing pickup 
                 basketball and trying various restaurants around the city (I am not much of a cook).
@@ -29,7 +29,7 @@ class About extends Component {
           </Row>
           <br/>
           <Row>
-            <Col md={12} xs={12}>
+            <Col>
               <a
                 href={ resume }
                 style={{ color: '#61dafb' }}

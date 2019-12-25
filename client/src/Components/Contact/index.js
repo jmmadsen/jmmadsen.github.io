@@ -14,17 +14,17 @@ class Contact extends Component {
         <br/>
         <Container>
           <Row>
-            <Col xs={4} md={4}>
+            <Col>
               <a href="mailto:jmmadsen16@gmail.com">
                 <Image className='contact-icon' src={gmail} rounded/>
               </a>
             </Col>
-            <Col xs={4} md={4}>
+            <Col>
               <a href="https://www.linkedin.com/in/jacob-madsen-01604993">
                 <Image className='contact-icon' src={linkedin} rounded/>
               </a>
             </Col>
-            <Col xs={4} md={4}>
+            <Col>
             <a href="https://github.com/jmmadsen">
                 <Image className='contact-icon' src={github} rounded/>
               </a>

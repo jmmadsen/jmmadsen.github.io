@@ -11,14 +11,14 @@ class Home extends Component {
         <img src={logo} className="App-logo" alt="logo"/>
         <Container>
           <Row>
-            <Col md={12} xs={12}>
+            <Col>
               <p>
                 A simple website to introduce myself
               </p>
             </Col>
           </Row>
           <Row>
-            <Col md={12} xs={12}>
+            <Col>
               <a
                 className="App-link"
                 href="https://github.com/jmmadsen/jmmadsen.github.io"
