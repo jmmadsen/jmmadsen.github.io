@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import { Button, Container, Row, Col } from 'react-bootstrap';
-// import usps from '../../images/usps.jpeg';
+import { Button, Container, Row, Col, Card, Figure } from 'react-bootstrap';
+import stamp from '../../images/stamp.png';
+import airforce from '../../images/airforce.png';
+import car from '../../images/car.png';
+import pentagon from '../../images/pentagon.png';
 
 // TODO - add transitions
 class Experience extends Component {
@@ -9,87 +12,115 @@ class Experience extends Component {
     super(props);
 
     this.state = {
-      workExperiences: [
+      index: 0,
+      learnMoreOpen: false,
+      workExperience: [
         {
-          text: 'US Postal Service',
-          subtext: 'Blockchain Implementation',
-          dates: 'Jul. 2018 - Present',
           color: 'outline-primary',
-          img: null
+          bgColor: 'primary',
+          project: 'US Postal Service',
+          dates: 'Jul. 2018 - Present',
+          role: 'UI Team Lead / Software Developer',
+          icon: stamp
         },
         {
-          text: 'US Air Force Civil Engineers',
-          subtext: 'Strategic Consulting',
-          dates: 'Feb. 2018 - Jul. 2018',
           color: 'outline-success',
-          img: null
+          bgColor: 'success',
+          project: 'US Air Force Civil Engineers',
+          dates: 'Feb. 2018 - Jul. 2018',
+          role: 'Strategy Consultant',
+          icon: airforce
         },
         {
-          text: 'Ohio Department of Transportation',
-          subtext: 'PeopleSoft Implementation',
-          dates: 'Sept. 2016 - Feb.2018',
           color: 'outline-danger',
-          img: null
+          bgColor: 'danger',
+          project: 'Ohio Department of Transportation',
+          dates: 'Sept. 2016 - Feb. 2018',
+          role: 'Functional Consultant',
+          icon: car
         },
         {
-          text: 'Navy Exchange Service Command - Pentagon',
-          subtext: 'Food Vendor Solicitation',
-          dates: 'May 2018 - Jan. 2019',
           color: 'outline-warning',
-          img: null
+          bgColor: 'warning',
+          project: 'Pentagon - Food Vendor Solicitation',
+          dates: 'May 2018 - Jan. 2019',
+          role: 'Personal Venture - Owner',
+          icon: pentagon
         }
-      ],
-      iterator: 0
+      ]
     }
+
   }
 
   handleClick = (num) => {
 
-    let newIterator = this.state.iterator + num;
+    const index = this.state.index + num;
 
-    if (newIterator < 0) {
-      newIterator = this.state.workExperiences.length - 1;
-    }
-    if (newIterator > this.state.workExperiences.length - 1) {
-      newIterator = 0;
-    }
-
-    this.setState({ iterator: newIterator });
+    this.setState({ index });
 
   }
 
   render = () => {
+
+    const { workExperience, index } = this.state;
 
     return(
       <header className="App-experience">
         <Container>
           <h1>Work Experience</h1>
           <br/>
+          {
+            index !== 0
+            ? <Row>
+                <Col>
+                  <Button block size={'lg'}
+                    variant={workExperience[index].color}
+                    onClick={ () => this.handleClick(-1) }
+                  >
+                    {'See Previous'}
+                  </Button>
+                </Col>
+              </Row>
+            : null
+          }
+          <br/>
           <Row>
-            <Col md={3} xs={3}>
-              <Button
-                size='lg' 
-                variant={this.state.workExperiences[this.state.iterator].color}
-                onClick={ () => this.handleClick(-1) }
-              >
-                {'<'}
-              </Button>
-            </Col>
-            <Col md={6} xs={6}>
-              <h3>{this.state.workExperiences[this.state.iterator].text}</h3>
-              <h4>{this.state.workExperiences[this.state.iterator].subtext}</h4>
-              <h5>{this.state.workExperiences[this.state.iterator].dates}</h5>
-            </Col>
-            <Col md={3} xs={3}>
-              <Button
-                size='lg'
-                variant={this.state.workExperiences[this.state.iterator].color}
-                onClick={ () => this.handleClick(1) }
-              >
-                {'>'}
-              </Button>
+            <Col>
+              <Card bg={workExperience[index].bgColor}>
+                <Card.Header as="h2" style={{ backgroundColor: '#282c34' }}>{workExperience[index].project}</Card.Header>
+                <Card.Body style={{ backgroundColor: '#282c34' }}>
+                  <Card.Title>{workExperience[index].dates}</Card.Title>
+                  <Figure style={{ display: 'inline-block' }}>
+                    <Figure.Image
+                      width={200}
+                      height={150}
+                      src={workExperience[index].icon}
+                    />
+                  </Figure>
+                  <Card.Text>
+                    {workExperience[index].role}
+                  </Card.Text>
+                  <Button variant={workExperience[index].bgColor}>Learn More</Button>
+                </Card.Body>
+              </Card>
             </Col>
           </Row>
+          <br/>
+          {
+            index !== workExperience.length - 1
+            ? <Row>
+                <Col>
+                  <Button block size={'lg'}
+                    variant={workExperience[index].color}
+                    onClick={ () => this.handleClick(1) }
+                  >
+                    {'See More'}
+                  </Button>
+                </Col>
+              </Row>
+            : null
+          }
+          <br/>
         </Container>
       </header>
     )
