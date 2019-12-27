@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { Button, Container, Row, Col, Card, Figure } from 'react-bootstrap';
+import USPS from './usps';
+import USAF from './usaf';
+import ODOT from './odot';
+import Pentagon from './pentagon';
 import stamp from '../../images/stamp.png';
 import airforce from '../../images/airforce.png';
 import car from '../../images/car.png';
@@ -13,7 +17,12 @@ class Experience extends Component {
 
     this.state = {
       index: 0,
-      learnMoreOpen: false,
+      isOpen: {
+        usps: false,
+        usaf: false,
+        odot: false,
+        pentagon: false
+      },
       workExperience: [
         {
           color: 'outline-primary',
@@ -55,8 +64,25 @@ class Experience extends Component {
   handleClick = (num) => {
 
     const index = this.state.index + num;
-
     this.setState({ index });
+
+  }
+
+  modalClick = () => {
+
+    let { isOpen, index } = this.state;
+
+    if (index === 0) {
+      isOpen['usps'] = !isOpen['usps'];
+    } else if (index === 1) {
+      isOpen['usaf'] = !isOpen['usaf'];
+    } else if (index === 2) {
+      isOpen['odot'] = !isOpen['odot'];
+    } else {
+      isOpen['pentagon'] = !isOpen['pentagon'];
+    }
+
+    this.setState({ isOpen });
 
   }
 
@@ -64,7 +90,7 @@ class Experience extends Component {
 
     const { workExperience, index } = this.state;
 
-    return(
+    return (
       <header className="App-experience">
         <Container>
           <h1>Work Experience</h1>
@@ -74,7 +100,7 @@ class Experience extends Component {
             ? <Row>
                 <Col>
                   <Button block size={'lg'}
-                    variant={workExperience[index].color}
+                    variant={workExperience[index].bgColor}
                     onClick={ () => this.handleClick(-1) }
                   >
                     {'See Previous'}
@@ -100,7 +126,12 @@ class Experience extends Component {
                   <Card.Text>
                     {workExperience[index].role}
                   </Card.Text>
-                  <Button variant={workExperience[index].bgColor}>Learn More</Button>
+                  <Button
+                    variant={workExperience[index].bgColor}
+                    onClick={ () => this.modalClick() }
+                  >
+                    Learn More
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -111,7 +142,7 @@ class Experience extends Component {
             ? <Row>
                 <Col>
                   <Button block size={'lg'}
-                    variant={workExperience[index].color}
+                    variant={workExperience[index].bgColor}
                     onClick={ () => this.handleClick(1) }
                   >
                     {'See More'}
@@ -121,6 +152,10 @@ class Experience extends Component {
             : null
           }
           <br/>
+          <USPS isOpen={this.state.isOpen} modalClick={this.modalClick}/>
+          <USAF isOpen={this.state.isOpen} modalClick={this.modalClick}/>
+          <ODOT isOpen={this.state.isOpen} modalClick={this.modalClick}/>
+          <Pentagon isOpen={this.state.isOpen} modalClick={this.modalClick}/>
         </Container>
       </header>
     )
