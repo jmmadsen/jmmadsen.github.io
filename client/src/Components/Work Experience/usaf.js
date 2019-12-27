@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Modal, Button } from 'react-bootstrap';
+import { Modal, Button, Container, Row, Col } from 'react-bootstrap';
 
 class USAF extends Component {
 
@@ -28,13 +28,45 @@ class USAF extends Component {
     const { isOpen, modalClick } = this.state;
 
     return (
-      <Modal show={ isOpen } onHide={ modalClick }>
+      <Modal show={isOpen} onHide={modalClick} size='lg'>
         <Modal.Header closeButton>
-          <Modal.Title>Blockchain Implementation</Modal.Title>
+          <Modal.Title>Navy Exchange Food Vendor Contract</Modal.Title>
         </Modal.Header>
-        <Modal.Body>USAF</Modal.Body>
+        <Modal.Body>
+          <Container>
+            <Row>
+              This contract was a personal venture outside of my employment with IBM. I created an LLC and partnered with a 
+              Charlottesville, VA area fast casual restaurant to submit a bid for restaurant space in the
+              Pentagon. As the primary bidder on the contract, I worked to develop a business plan, managed the relationship
+              with relevant Navy officials, and created an RFP to formally submit for consideration.
+            </Row>
+            <br/>
+            <Row>
+              Although our submission was ultimately not selected at the end of the solicitation, I learned valuable 
+              business management principles throughout this process, such as the following:
+            </Row>
+            <br/>
+            <Row>
+              <Col>
+                <li>
+                  Seeking and retaining legal counsel for forming an LLC, and creating a subcontractor relationship
+                </li>
+                <li>
+                  Developing a five year business plan, including all relevant financial projections and funding considerations
+                </li>
+                <li>
+                  Learning the solicitation process, attending information sessions in the Pentagon, and handling communication
+                  with Pentagon officials
+                </li>
+                <li>
+                  Developing, writing, and managing a proposal response from beginning to end
+                </li>
+              </Col>
+            </Row>
+          </Container>
+        </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={ modalClick }>
+          <Button variant="danger" onClick={modalClick}>
             Close
           </Button>
         </Modal.Footer>

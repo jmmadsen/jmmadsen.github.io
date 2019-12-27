@@ -33,8 +33,16 @@ class Experience extends Component {
           icon: stamp
         },
         {
-          color: 'outline-success',
+          color: 'outline-warning',
           bgColor: 'success',
+          project: 'Pentagon - Food Vendor Solicitation',
+          dates: 'May 2018 - Jan. 2019',
+          role: 'Personal Venture - Owner',
+          icon: pentagon
+        },
+        {
+          color: 'outline-success',
+          bgColor: 'danger',
           project: 'US Air Force Civil Engineers',
           dates: 'Feb. 2018 - Jul. 2018',
           role: 'Strategy Consultant',
@@ -42,19 +50,11 @@ class Experience extends Component {
         },
         {
           color: 'outline-danger',
-          bgColor: 'danger',
+          bgColor: 'warning',
           project: 'Ohio Department of Transportation',
           dates: 'Sept. 2016 - Feb. 2018',
           role: 'Functional Consultant',
           icon: car
-        },
-        {
-          color: 'outline-warning',
-          bgColor: 'warning',
-          project: 'Pentagon - Food Vendor Solicitation',
-          dates: 'May 2018 - Jan. 2019',
-          role: 'Personal Venture - Owner',
-          icon: pentagon
         }
       ]
     }
@@ -75,11 +75,11 @@ class Experience extends Component {
     if (index === 0) {
       isOpen['usps'] = !isOpen['usps'];
     } else if (index === 1) {
-      isOpen['usaf'] = !isOpen['usaf'];
-    } else if (index === 2) {
-      isOpen['odot'] = !isOpen['odot'];
-    } else {
       isOpen['pentagon'] = !isOpen['pentagon'];
+    } else if (index === 2) {
+      isOpen['usaf'] = !isOpen['usaf'];
+    } else {
+      isOpen['odot'] = !isOpen['odot'];
     }
 
     this.setState({ isOpen });

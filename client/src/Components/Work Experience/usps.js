@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Modal, Button } from 'react-bootstrap';
+import { Modal, Button, Container, Row, Col } from 'react-bootstrap';
 
 class USPS extends Component {
 
@@ -28,13 +28,45 @@ class USPS extends Component {
     const { isOpen, modalClick } = this.state;
 
     return (
-      <Modal show={ isOpen } onHide={ modalClick }>
+      <Modal show={isOpen} onHide={modalClick} size='lg'>
         <Modal.Header closeButton>
           <Modal.Title>Blockchain Implementation</Modal.Title>
         </Modal.Header>
-        <Modal.Body>USPS</Modal.Body>
+        <Modal.Body>
+          <Container>
+            <Row>
+              This project is a blockchain implementation for USPS International Shipping. I began as a UI developer,
+              building an analytics dashboard to intuitively display the millions of transactions recorded by the blockchain.
+              As the project grew, I moved into the role of the UI Team Lead. I am responsible for the features implemented by a 
+              team of six developers. I spend about 50% of my time writing code, and another 50% managing the overall direction
+              of the UI with client and leadership stakeholders.
+            </Row>
+            <br/>
+            <Row>
+              I use, work with, or implement the following technologies on a regular basis:
+            </Row>
+            <br/>
+            <Row>
+              <Col>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>HTML / CSS</li>
+              </Col>
+              <Col>
+                <li>Node.js</li>
+                <li>SQL / PostgreSQL</li>
+                <li>IBM Cloud</li>
+              </Col>
+              <Col>
+                <li>Git / GitHub</li>
+                <li>Docker</li>
+                <li>GitLab</li>
+              </Col>
+            </Row>
+          </Container>
+        </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={ modalClick }>
+          <Button variant="primary" onClick={modalClick}>
             Close
           </Button>
         </Modal.Footer>
