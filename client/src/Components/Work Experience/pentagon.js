@@ -35,7 +35,7 @@ class Pentagon extends Component {
         <Modal.Body>
           <Container>
             <Row>
-              This contract was a personal venture outside of my employment with IBM. I created an LLC and partnered with a 
+              This contract was a personal venture in my spare time, outside of my employment with IBM. I created an LLC and partnered with a 
               Charlottesville, VA area fast casual restaurant to submit a bid for restaurant space in the
               Pentagon. As the primary bidder on the contract, I worked to develop a business plan, managed the relationship
               with relevant Navy officials, and created an RFP to formally submit for consideration.
@@ -59,7 +59,7 @@ class Pentagon extends Component {
                   with Pentagon officials
                 </li>
                 <li>
-                  Developing, writing, and managing a proposal response from beginning to end
+                  Designing, writing, and managing a proposal response from beginning to end
                 </li>
               </Col>
             </Row>

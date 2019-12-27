@@ -30,36 +30,34 @@ class USAF extends Component {
     return (
       <Modal show={isOpen} onHide={modalClick} size='lg'>
         <Modal.Header closeButton>
-          <Modal.Title>Navy Exchange Food Vendor Contract</Modal.Title>
+          <Modal.Title>USAF CE Strategy Engagement</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Container>
             <Row>
-              This contract was a personal venture outside of my employment with IBM. I created an LLC and partnered with a 
-              Charlottesville, VA area fast casual restaurant to submit a bid for restaurant space in the
-              Pentagon. As the primary bidder on the contract, I worked to develop a business plan, managed the relationship
-              with relevant Navy officials, and created an RFP to formally submit for consideration.
+              I was in the role of a strategic consultant for this project. For this project, I would work in the Pentagon
+              with senior Air Force officers to develop career education and retention programs for their troops. I would
+              examine historical data and feedback across different units to develop new education approaches in accordance
+              with the 2018 USAF strategic initiatives.
             </Row>
             <br/>
             <Row>
-              Although our submission was ultimately not selected at the end of the solicitation, I learned valuable 
-              business management principles throughout this process, such as the following:
+              This role was an excellent opportunity for me to learn working with the US military culture. The following are
+              examples of my day to day responsibilities:
             </Row>
             <br/>
             <Row>
               <Col>
                 <li>
-                  Seeking and retaining legal counsel for forming an LLC, and creating a subcontractor relationship
+                  Traveling to the Air Force Institute of Technology to participate in workshops developing 2019 educational
+                  initiatives for the broader AF enterprise
                 </li>
                 <li>
-                  Developing a five year business plan, including all relevant financial projections and funding considerations
+                  Working with the IBM marketing team to create pamphlets, flyers, videos, and social media pages
+                  to help the USA CE spread their educational directives to airmen across the world
                 </li>
                 <li>
-                  Learning the solicitation process, attending information sessions in the Pentagon, and handling communication
-                  with Pentagon officials
-                </li>
-                <li>
-                  Developing, writing, and managing a proposal response from beginning to end
+                  Developing slides and documentation to support the senior CE educational officer for daily and weekly meetings
                 </li>
               </Col>
             </Row>
