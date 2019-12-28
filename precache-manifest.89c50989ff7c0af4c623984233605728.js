@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bda3b6c4ebac7ebea1f7983eb80dbeb7",
+    "revision": "5411c84d568b6debe9e039854b615219",
     "url": "/index.html"
   },
   {
-    "revision": "6e1affaff4602cbf46d3",
+    "revision": "63134c6fb6c6b4416b22",
     "url": "/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "5ee5ba0d0f139e14dfcc",
+    "revision": "57ef6f5b254aa6ef0010",
     "url": "/static/css/main.def06492.chunk.css"
   },
   {
-    "revision": "6e1affaff4602cbf46d3",
-    "url": "/static/js/2.0a2efa19.chunk.js"
+    "revision": "63134c6fb6c6b4416b22",
+    "url": "/static/js/2.039274ee.chunk.js"
   },
   {
     "revision": "86afaa925e0f432774bf95b19b6933fb",
-    "url": "/static/js/2.0a2efa19.chunk.js.LICENSE"
+    "url": "/static/js/2.039274ee.chunk.js.LICENSE"
   },
   {
-    "revision": "5ee5ba0d0f139e14dfcc",
-    "url": "/static/js/main.977c3515.chunk.js"
+    "revision": "57ef6f5b254aa6ef0010",
+    "url": "/static/js/main.a96ef252.chunk.js"
   },
   {
     "revision": "6b3defdcd169e5f902d5",
@@ -104,16 +104,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/linkedin.14f7b675.svg"
   },
   {
-    "revision": "4ba612482debeec96808b5fd52c12534",
-    "url": "/static/media/loading.4ba61248.gif"
-  },
-  {
     "revision": "a52da8e9983e5f444c4df30637528661",
     "url": "/static/media/manager.a52da8e9.svg"
   },
   {
-    "revision": "4df0f22dd1493fef825bbfc0937aa381",
-    "url": "/static/media/me.4df0f22d.jpg"
+    "revision": "0a9fc6e2cfa752cde06c634dedf931b6",
+    "url": "/static/media/me4.0a9fc6e2.jpg"
   },
   {
     "revision": "64a2967e489fc67c0d94bf7f2223e267",
@@ -208,8 +204,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/trading.f457f6fe.png"
   },
   {
-    "revision": "e0255bba4b472130eeafb734cf3c2e7a",
-    "url": "/static/media/uva.e0255bba.png"
+    "revision": "f1c80c8fa5816f4ed3568f383541cef5",
+    "url": "/static/media/uva.f1c80c8f.png"
   },
   {
     "revision": "a4e0e93248bd3cf764a560c7733128c3",
