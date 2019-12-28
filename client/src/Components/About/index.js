@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import Img from 'react-image';
 import me from '../../images/me.jpg';
+import loading from '../../images/loading.gif';
 import resume from './resume.pdf';
 
 class About extends Component {
 
   render = () => {
+
+    const Pic = () => 
+      <Img
+        style={{ height: '40vmin', borderRadius: '50%' }} 
+        src={me}
+        loader={<img alt='me on beach' src={loading} style={{ height: '40vmin', borderRadius: '50%' }} />}
+      />
 
     return(
       <header className="App-about">
@@ -16,7 +25,7 @@ class About extends Component {
             </Col>
           </Row>
           <br/>
-          <img src={me} alt='Me on the beach' style={{ height: '40vmin', borderRadius: '50%' }}/>
+          <Pic/>
           <br/>
           <br/>
           <Row>

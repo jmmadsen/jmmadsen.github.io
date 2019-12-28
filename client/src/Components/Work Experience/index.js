@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Button, Container, Row, Col, Card, Figure } from 'react-bootstrap';
+import { Button, Container, Row, Col, Card } from 'react-bootstrap';
+import Img from 'react-image';
 import USPS from './usps';
 import USAF from './usaf';
 import ODOT from './odot';
@@ -8,6 +9,7 @@ import stamp from '../../images/stamp.png';
 import airforce from '../../images/airforce.png';
 import car from '../../images/car.png';
 import pentagon from '../../images/pentagon.png';
+import blankIcon from '../../images/blankIcon.png';
 
 // TODO - add transitions
 class Experience extends Component {
@@ -90,6 +92,13 @@ class Experience extends Component {
 
     const { workExperience, index } = this.state;
 
+    const Pic = () => 
+      <Img
+        style={{ width: '200px' }} 
+        src={workExperience[index].icon}
+        loader={<img alt='work icon' src={blankIcon} style={{ width: '200px', borderRadius: '150px' }} />}
+      />
+
     return (
       <header className="App-experience">
         <Container>
@@ -116,13 +125,7 @@ class Experience extends Component {
                 <Card.Header as="h2" style={{ backgroundColor: '#282c34' }}>{workExperience[index].project}</Card.Header>
                 <Card.Body style={{ backgroundColor: '#282c34' }}>
                   <Card.Title>{workExperience[index].dates}</Card.Title>
-                  <Figure style={{ display: 'inline-block' }}>
-                    <Figure.Image
-                      width={200}
-                      height={150}
-                      src={workExperience[index].icon}
-                    />
-                  </Figure>
+                  <Pic/>
                   <Card.Text>
                     {workExperience[index].role}
                   </Card.Text>
