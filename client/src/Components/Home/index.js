@@ -24,10 +24,10 @@ class Home extends Component {
             <div id="wrapD3Cube">
               <div id="D3Cube">
                 <div id="side1"></div>
+                <div id="side2"><h3 style={{ lineHeight: '150px' }}>Data Analyst</h3></div>
                 <div id="side3"><h3 style={{ position: 'absolute', top: '25%' }}>Software Developer</h3></div>
-                <div id="side2"><h3 style={{ position: 'absolute', top: '25%' }}>Technology Consultant</h3></div>
                 <div id="side4"><h3 style={{ lineHeight: '150px' }}>Team Lead</h3></div>
-                <div id="side5"><h3 style={{ position: 'absolute', top: '25%' }}>Data Scientist</h3></div>
+                <div id="side5"><h3 style={{ position: 'absolute', top: '25%' }}>Technology Consultant</h3></div>
                 <div id="side6"></div>
               </div>
             </div>

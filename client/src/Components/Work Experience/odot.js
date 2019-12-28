@@ -35,14 +35,14 @@ class ODOT extends Component {
         <Modal.Body>
           <Container>
             <Row>
-              For my ODOT project, I was in the role of a functional consultant. ODOT was consolidating their disparate financial, HR,
+              For my ODOT project, I was in the role of a functional consultant. ODOT was consolidating their HR, financial,
               and procurement processes into the PeopleSoft ecosystem, while also aligning with PeopleSoft upgrades across the state 
-              of Ohio. I would travel to Ohio every week Monday through Thursday to work directly with ODOT representatives in designing
+              of Ohio. I would travel to Columbus every week Monday through Thursday to work directly with ODOT representatives in designing
               this new system.
             </Row>
             <br/>
             <Row>
-              This role gave me invaluable experience in learning the software development process. I was in this role from requirements
+              This role gave me invaluable experience in learning the software development life cycle. I was in this role from requirements
               gathering through post-implementation support. The following are examples of my duties:
             </Row>
             <br/>

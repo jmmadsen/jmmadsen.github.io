@@ -20,12 +20,12 @@ class Contact extends Component {
               </a>
             </Col>
             <Col>
-              <a href="https://www.linkedin.com/in/jacob-madsen-01604993">
+              <a href="https://www.linkedin.com/in/jacob-madsen-01604993" target="_blank" rel="noopener noreferrer">
                 <Image className='contact-icon' src={linkedin} rounded/>
               </a>
             </Col>
             <Col>
-            <a href="https://github.com/jmmadsen">
+            <a href="https://github.com/jmmadsen" target="_blank" rel="noopener noreferrer">
                 <Image className='contact-icon' src={github} rounded/>
               </a>
             </Col>

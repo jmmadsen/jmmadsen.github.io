@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Img from 'react-image';
-import me from '../../images/me.jpg';
-import loading from '../../images/loading.gif';
+import me from '../../images/me4.jpg';
+import blankIcon from '../../images/blankIcon.png';
 import resume from './resume.pdf';
 
 class About extends Component {
@@ -13,7 +13,7 @@ class About extends Component {
       <Img
         style={{ height: '40vmin', borderRadius: '50%' }} 
         src={me}
-        loader={<img alt='me on beach' src={loading} style={{ height: '40vmin', borderRadius: '50%' }} />}
+        loader={<img alt='me on beach' src={blankIcon} style={{ height: '40vmin', borderRadius: '50%' }} />}
       />
 
     return(

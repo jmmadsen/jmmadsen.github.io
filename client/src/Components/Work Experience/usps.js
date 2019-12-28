@@ -35,15 +35,15 @@ class USPS extends Component {
         <Modal.Body>
           <Container>
             <Row>
-              My current engagement is a blockchain implementation for USPS International Shipping. I began as a UI developer,
+              My current engagement is a blockchain implementation for the USPS International Shipping division. I began as a UI developer,
               building an analytics dashboard to intuitively display the millions of transactions recorded by the blockchain.
               As the project grew, I moved into the role of the UI Team Lead. I am responsible for the features implemented by a 
-              team of six developers. I spend about 50% of my time writing code, and another 50% managing the overall direction
+              team of six developers. I spend about 50% of my time writing code, and another 50% managing the direction
               of the UI with client and leadership stakeholders.
             </Row>
             <br/>
             <Row>
-              I use, work with, or implement the following technologies on a regular basis:
+              I use or work with the following technologies on a regular basis:
             </Row>
             <br/>
             <Row>

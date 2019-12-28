@@ -49,7 +49,7 @@ class Pentagon extends Component {
             <Row>
               <Col>
                 <li>
-                  Seeking and retaining legal counsel for forming an LLC, and creating a subcontractor relationship
+                  Seeking and retaining legal counsel for forming an LLC and creating a subcontractor relationship
                 </li>
                 <li>
                   Developing a five year business plan, including all relevant financial projections and funding considerations

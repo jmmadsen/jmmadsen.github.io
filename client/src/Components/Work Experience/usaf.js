@@ -35,14 +35,14 @@ class USAF extends Component {
         <Modal.Body>
           <Container>
             <Row>
-              I was in the role of a strategic consultant for this project. For this project, I would work in the Pentagon
-              with senior Air Force officers to develop career education and retention programs for their troops. I would
-              examine historical data and feedback across different units to develop new education approaches in accordance
+              For this project, I was in the role of a strategic consultant. I would work in the Pentagon
+              with senior Air Force officers to develop career education and retention programs for their troops. This included
+              examining historical data and feedback across different units to develop new educational approaches, in accordance
               with the 2018 USAF strategic initiatives.
             </Row>
             <br/>
             <Row>
-              This role was an excellent opportunity for me to learn working with the US military culture. The following are
+              This role was my first opportunity to work within a US military project. The following are
               examples of my day to day responsibilities:
             </Row>
             <br/>
@@ -50,11 +50,11 @@ class USAF extends Component {
               <Col>
                 <li>
                   Traveling to the Air Force Institute of Technology to participate in workshops developing 2019 educational
-                  initiatives for the broader AF enterprise
+                  initiatives for the broader AF Civil Engineer enterprise
                 </li>
                 <li>
                   Working with the IBM marketing team to create pamphlets, flyers, videos, and social media pages
-                  to help the USA CE spread their educational directives to airmen across the world
+                  to help the USAF CE spread their educational directives to airmen across the world
                 </li>
                 <li>
                   Developing slides and documentation to support the senior CE educational officer for daily and weekly meetings

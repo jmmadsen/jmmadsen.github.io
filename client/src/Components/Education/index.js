@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Figure, Container, Row, Col } from 'react-bootstrap';
 import Img from 'react-image';
-import loading from '../../images/loading.gif';
+import blankIcon from '../../images/blankIcon.png';
 import uva from '../../images/uva.png';
 import theory from '../../images/analytics.svg';
 import behavioral from '../../images/thinking.svg';
@@ -18,7 +18,7 @@ class Educations extends Component {
       <Img
         style={{ height: '40vmin', borderRadius: '50%' }} 
         src={uva}
-        loader={<img alt='university of virginia' src={loading} style={{ height: '40vmin', borderRadius: '50%' }} />}
+        loader={<img alt='university of virginia' src={blankIcon} style={{ height: '40vmin', borderRadius: '50%' }} />}
       />
 
     return(
