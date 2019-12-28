@@ -68,9 +68,9 @@ below is css for rotating cube on home page
   margin: 20px auto;
 }
 #D3Cube {
-  width: 112px;
-  height: 112px;
-  top: 0px;
+  width: 170px;
+  height: 170px;
+  top: -35px;
   transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -102,55 +102,55 @@ below is css for rotating cube on home page
   position: absolute;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  width: 112px;
-  height: 112px;
+  width: 170px;
+  height: 170px;
   float: left;
   overflow: hidden;
   opacity: 0.85;
 }
 #side1 {
-  transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(56px);
-  -moz-transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(56px);
-  -webkit-transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(56px);
+  transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(85px);
+  -moz-transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(85px);
+  -webkit-transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(85px);
   /* background-color: #FFF; */
   background: linear-gradient(#fff, #fff);
 }
 #side2 {
-  transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(56px);
-  -moz-transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(56px);
-  -webkit-transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+  transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(85px);
+  -moz-transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(85px);
+  -webkit-transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(85px);
   /* background-color: #ffaf1c; */
   background-color: #007BFF;
   /* background: linear-gradient(#ffd89b, #19547b); */
 }
 #side3 {
-  transform: translateX(0px) translateY(0px) translateZ(56px);
-  -moz-transform: translateX(0px) translateY(0px) translateZ(56px);
-  -webkit-transform: translateX(0px) translateY(0px) translateZ(56px);
+  transform: translateX(0px) translateY(0px) translateZ(85px);
+  -moz-transform: translateX(0px) translateY(0px) translateZ(85px);
+  -webkit-transform: translateX(0px) translateY(0px) translateZ(85px);
   /* background-color: #58d568; */
   background-color: #28A745;
   /* background: linear-gradient(#cc2b5e, #753a88); */
 }
 #side4 {
-  transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(56px);
-  -moz-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(56px);
-  -webkit-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(56px);
+  transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(85px);
+  -moz-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(85px);
+  -webkit-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(85px);
   /* background-color: #ed3030; */
   background-color: #DC3545;
   /* background: linear-gradient(#2193b0, #6dd5ed); */
 }
 #side5 {
-  transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(56px);
-  -moz-transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(56px);
-  -webkit-transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(56px);
+  transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(85px);
+  -moz-transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(85px);
+  -webkit-transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(85px);
   /* background-color: #1c5ffe; */
   background-color: #FFC107;
   /* background: linear-gradient(#f6d365, #fda085); */
 }
 #side6 {
-  transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(56px);
-  -moz-transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(56px);
-  -webkit-transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+  transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(85px);
+  -moz-transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(85px);
+  -webkit-transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(85px);
   background-color: #f2f215;
   /* background-color: #FFF; */
 }
