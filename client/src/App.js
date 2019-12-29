@@ -10,7 +10,7 @@ import Skills from './Components/Skills/index.js';
 import Education from './Components/Education/index.js';
 import Contact from './Components/Contact/index.js';
 
-function App() {
+const App = () => {
 
   const [active, setActive] = useState('home');
 
