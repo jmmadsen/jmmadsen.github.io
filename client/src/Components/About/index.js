@@ -41,6 +41,8 @@ class About extends Component {
             <Col>
               <a
                 href={ resume }
+                target="_blank" 
+                rel="noopener noreferrer"
                 style={{ color: '#61dafb' }}
                 download='Jacob Madsen Resume'>
                 Download My Resume
