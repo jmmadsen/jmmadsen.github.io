@@ -1,5 +1,6 @@
 1. resolve bug with nav link highlight
-2. optimize image loading times
-3. add animation between transitions
-4. redesign home page animation
-5. redesign work experience page
+2. cleanup bootstrap resources
+3. optimize image loading times
+4. add animation between transitions
+5. redesign home page animation
+6. redesign work experience page
