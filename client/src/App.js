@@ -18,26 +18,26 @@ const App = () => {
     <div className="App">
       <HashRouter>
         <Navbar bg="light" expand="lg">
-          <LinkContainer exact to='/'><Navbar.Brand onClick={ () => setActive('home') }>Jacob Madsen</Navbar.Brand></LinkContainer>
+          <LinkContainer exact to='/'><Navbar.Brand>Jacob Madsen</Navbar.Brand></LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <LinkContainer to='/about'><Nav.Link onClick={ () => setActive('about') } active={ active === 'about' }>About</Nav.Link></LinkContainer>
-              <LinkContainer to='/skills'><Nav.Link onClick={ () => setActive('skills') } active={ active === 'skills' }>Skills</Nav.Link></LinkContainer>
-              <LinkContainer to='/experience'><Nav.Link onClick={ () => setActive('experience') } active={ active === 'experience' }>Work Experience</Nav.Link></LinkContainer>
-              <LinkContainer to='/education'><Nav.Link onClick={ () => setActive('education') } active={ active === 'education' }>Education</Nav.Link></LinkContainer>
-              <LinkContainer to='/contact'><Nav.Link onClick={ () => setActive('contact') } active={ active === 'contact' }>Contact Me</Nav.Link></LinkContainer>
+              <LinkContainer to='/about'><Nav.Link active={ active === 'about' }>About</Nav.Link></LinkContainer>
+              <LinkContainer to='/skills'><Nav.Link active={ active === 'skills' }>Skills</Nav.Link></LinkContainer>
+              <LinkContainer to='/experience'><Nav.Link active={ active === 'experience' }>Work Experience</Nav.Link></LinkContainer>
+              <LinkContainer to='/education'><Nav.Link active={ active === 'education' }>Education</Nav.Link></LinkContainer>
+              <LinkContainer to='/contact'><Nav.Link active={ active === 'contact' }>Contact Me</Nav.Link></LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
 
         <Switch>
-          <Route exact path='/' component={Home}/>
-          <Route path='/about' component={About}/>
-          <Route path='/experience' component={Experience}/>
-          <Route path='/skills' component={Skills}/>
-          <Route path='/education' component={Education}/>
-          <Route path='/contact' component={Contact}/>
+          <Route exact path='/' component={Home} onEnter={ () => setActive('home') }/>
+          <Route path='/about' component={About} onEnter={ () => setActive('about') }/>
+          <Route path='/experience' component={Experience} onEnter={ () => setActive('experience') }/>
+          <Route path='/skills' component={Skills} onEnter={ () => setActive('skills') }/>
+          <Route path='/education' component={Education} onEnter={ () => setActive('education') }/>
+          <Route path='/contact' component={Contact} onEnter={ () => setActive('contact') }/>
         </Switch>
       </HashRouter>
     </div>
