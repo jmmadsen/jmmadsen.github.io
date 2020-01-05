@@ -10,19 +10,26 @@ class Contact extends Component {
     super(props);
 
     this.state = {
-      loaded: false
+      loaded: {
+        gmail: false,
+        linkedin: false,
+        github: false
+      } 
     }
   }
 
-  loaded = () => {
+  loaded = (pic) => {
 
-    this.setState({ loaded: true });
+    let { loaded } = this.state;
+    loaded[pic] = true;
+
+    this.setState({ loaded });
 
   }
 
   render = () => {
 
-    const style = this.state.loaded ? {} : { visibility: 'hidden' };
+    const style = Object.values(this.state.loaded).every((val) => val === true) ? {} : { visibility: 'hidden' };
 
     return(
       <header className="App-contact">
@@ -32,17 +39,17 @@ class Contact extends Component {
           <Row>
             <Col>
               <a href="mailto:jmmadsen16@gmail.com">
-                <Image onLoad={ this.loaded } className='contact-icon' src={gmail} rounded/>
+                <Image onLoad={ () => this.loaded('gmail') } className='contact-icon' src={gmail} rounded/>
               </a>
             </Col>
             <Col>
               <a href="https://www.linkedin.com/in/jacob-madsen-01604993" target="_blank" rel="noopener noreferrer">
-                <Image className='contact-icon' src={linkedin} rounded/>
+                <Image onLoad={ () => this.loaded('linkedin') } className='contact-icon' src={linkedin} rounded/>
               </a>
             </Col>
             <Col>
             <a href="https://github.com/jmmadsen" target="_blank" rel="noopener noreferrer">
-                <Image className='contact-icon' src={github} rounded/>
+                <Image onLoad={ () => this.loaded('github') } className='contact-icon' src={github} rounded/>
               </a>
             </Col>
           </Row>

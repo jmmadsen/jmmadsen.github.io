@@ -20,19 +20,26 @@ class Consulting extends Component {
     super(props);
 
     this.state = {
-      loaded: false
+      loaded: {
+        one: false,
+        two: false,
+        three: false
+      } 
     }
   }
 
-  loaded = () => {
+  loaded = (pic) => {
 
-    this.setState({ loaded: true });
+    let { loaded } = this.state;
+    loaded[pic] = true;
+
+    this.setState({ loaded });
 
   }
 
   render = () => {
 
-    const style = this.state.loaded ? {} : { visibility: 'hidden' };
+    const style = Object.values(this.state.loaded).every((val) => val === true) ? {} : { visibility: 'hidden' };
 
     return(
       <Container style={ style }>
@@ -49,7 +56,7 @@ class Consulting extends Component {
                 <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
-                      onLoad={ this.loaded }
+                      onLoad={ () => this.loaded('one') }
                       width={140}
                       height={90}
                       src={mentoring}
@@ -59,6 +66,7 @@ class Consulting extends Component {
                 <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
+                      onLoad={ () => this.loaded('two') }
                       width={140}
                       height={90}
                       src={leadership1}
@@ -68,6 +76,7 @@ class Consulting extends Component {
                 <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
+                      onLoad={ () => this.loaded('three') }
                       width={140}
                       height={90}
                       src={leadership2}
