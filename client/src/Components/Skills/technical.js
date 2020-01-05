@@ -18,10 +18,26 @@ import ibmcloud from '../../images/ibmcloud.png';
 
 class Technical extends Component {
 
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      loaded: false
+    }
+  }
+
+  loaded = () => {
+
+    this.setState({ loaded: true });
+
+  }
+
   render = () => {
 
+    const style = this.state.loaded ? {} : { visibility: 'hidden' };
+
     return(
-      <Container>
+      <Container style={ style }>
         <br/>
         <Row>
           <div>
@@ -35,6 +51,7 @@ class Technical extends Component {
                 <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
+                      onLoad={ this.loaded }
                       width={140}
                       height={90}
                       src={js}

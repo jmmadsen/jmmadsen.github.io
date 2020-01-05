@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Figure, Container, Row, Col } from 'react-bootstrap';
 import Img from 'react-image';
-import blankIcon from '../../images/blankIcon.png';
 import uva from '../../images/uva.png';
 import theory from '../../images/analytics.svg';
 import behavioral from '../../images/thinking.svg';
@@ -12,21 +11,34 @@ import project from '../../images/manager.svg';
 
 class Educations extends Component {
 
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      loaded: false
+    }
+  }
+
+  loaded = () => {
+
+    this.setState({ loaded: true });
+
+  }
+
   render = () => {
 
-    const Pic = () => 
-      <Img
-        style={{ height: '40vmin', borderRadius: '50%' }} 
-        src={uva}
-        loader={<img alt='university of virginia' src={blankIcon} style={{ height: '40vmin', borderRadius: '50%' }} />}
-      />
+    const style = this.state.loaded ? {} : { visibility: 'hidden' };
 
     return(
       <header className="App-education">
-        <Container>
+        <Container style={ style }>
           <h1>Education</h1>
           <br/>
-          <Pic/>
+          <Img
+            onLoad={ this.loaded }
+            style={{ height: '40vmin', borderRadius: '50%' }} 
+            src={uva}
+          />
           <br/>
           <p>University of Virginia</p>
           <br/>

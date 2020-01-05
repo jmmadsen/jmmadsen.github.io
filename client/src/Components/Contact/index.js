@@ -1,37 +1,57 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import linkedin from '../../images/linkedin.svg'
 import gmail from '../../images/gmail.svg';
 import github from '../../images/github.svg';
 
-const Contact = () => {
+class Contact extends Component {
 
-  return(
-    <header className="App-contact">
-      <h1>Contact Me</h1>
-      <br/>
-      <Container>
-        <Row>
-          <Col>
-            <a href="mailto:jmmadsen16@gmail.com">
-              <Image className='contact-icon' src={gmail} rounded/>
-            </a>
-          </Col>
-          <Col>
-            <a href="https://www.linkedin.com/in/jacob-madsen-01604993" target="_blank" rel="noopener noreferrer">
-              <Image className='contact-icon' src={linkedin} rounded/>
-            </a>
-          </Col>
-          <Col>
-          <a href="https://github.com/jmmadsen" target="_blank" rel="noopener noreferrer">
-              <Image className='contact-icon' src={github} rounded/>
-            </a>
-          </Col>
-        </Row>
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      loaded: false
+    }
+  }
+
+  loaded = () => {
+
+    this.setState({ loaded: true });
+
+  }
+
+  render = () => {
+
+    const style = this.state.loaded ? {} : { visibility: 'hidden' };
+
+    return(
+      <header className="App-contact">
+        <h1>Contact Me</h1>
         <br/>
-      </Container>
-    </header>
-  )
+        <Container style={ style }>
+          <Row>
+            <Col>
+              <a href="mailto:jmmadsen16@gmail.com">
+                <Image onLoad={ this.loaded } className='contact-icon' src={gmail} rounded/>
+              </a>
+            </Col>
+            <Col>
+              <a href="https://www.linkedin.com/in/jacob-madsen-01604993" target="_blank" rel="noopener noreferrer">
+                <Image className='contact-icon' src={linkedin} rounded/>
+              </a>
+            </Col>
+            <Col>
+            <a href="https://github.com/jmmadsen" target="_blank" rel="noopener noreferrer">
+                <Image className='contact-icon' src={github} rounded/>
+              </a>
+            </Col>
+          </Row>
+          <br/>
+        </Container>
+      </header>
+    )
+
+  }
 
 }
 

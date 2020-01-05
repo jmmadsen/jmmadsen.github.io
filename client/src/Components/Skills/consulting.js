@@ -13,14 +13,29 @@ import bd1 from '../../images/bd1.png';
 import bd2 from '../../images/bd2.png';
 import bd3 from '../../images/bd3.png';
 
-//TODO: cache images for faster loading (use a CDN and utilize caching)
 
 class Consulting extends Component {
 
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      loaded: false
+    }
+  }
+
+  loaded = () => {
+
+    this.setState({ loaded: true });
+
+  }
+
   render = () => {
 
+    const style = this.state.loaded ? {} : { visibility: 'hidden' };
+
     return(
-      <Container>
+      <Container style={ style }>
         <br/>
         <Row>
           <div>
@@ -34,6 +49,7 @@ class Consulting extends Component {
                 <Col>
                   <Figure style={{ display: 'inline-block' }}>
                     <Figure.Image
+                      onLoad={ this.loaded }
                       width={140}
                       height={90}
                       src={mentoring}
