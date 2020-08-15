@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import { Button, Container, Row, Col, Card } from 'react-bootstrap';
 import Img from 'react-image';
+import DOC from './doc';
+import DOJ from './doj';
 import USPS from './usps';
 import USAF from './usaf';
 import ODOT from './odot';
 import Pentagon from './pentagon';
+import doc from '../../images/doc.png';
+import doj from '../../images/doj.png';
 import stamp from '../../images/stamp.png';
 import airforce from '../../images/airforce.png';
 import car from '../../images/car.png';
@@ -20,6 +24,8 @@ class Experience extends Component {
     this.state = {
       index: 0,
       isOpen: {
+        doc: false,
+        doj: false,
         usps: false,
         usaf: false,
         odot: false,
@@ -27,10 +33,26 @@ class Experience extends Component {
       },
       workExperience: [
         {
+          color: 'outline-light',
+          bgColor: 'light',
+          project: 'US Department of Commerce',
+          dates: 'Jun. 2020 - Aug. 2020',
+          role: 'DevOps Developer',
+          icon: doc
+        },
+        {
+          color: 'outline-info',
+          bgColor: 'info',
+          project: 'US Department of Justice',
+          dates: 'May 2020 - Jun. 2020',
+          role: 'UI & Data Analytics Developer',
+          icon: doj
+        },
+        {
           color: 'outline-primary',
           bgColor: 'primary',
           project: 'US Postal Service',
-          dates: 'Jul. 2018 - Present',
+          dates: 'Jul. 2018 - Apr. 2020',
           role: 'UI Team Lead / Software Developer',
           icon: stamp
         },
@@ -75,10 +97,14 @@ class Experience extends Component {
     let { isOpen, index } = this.state;
 
     if (index === 0) {
-      isOpen['usps'] = !isOpen['usps'];
+      isOpen['doc'] = !isOpen['doc'];
     } else if (index === 1) {
-      isOpen['pentagon'] = !isOpen['pentagon'];
+      isOpen['doj'] = !isOpen['doj'];
     } else if (index === 2) {
+      isOpen['usps'] = !isOpen['usps'];
+    } else if (index === 3) {
+      isOpen['pentagon'] = !isOpen['pentagon'];
+    } else if (index === 4) {
       isOpen['usaf'] = !isOpen['usaf'];
     } else {
       isOpen['odot'] = !isOpen['odot'];
@@ -155,6 +181,8 @@ class Experience extends Component {
             : null
           }
           <br/>
+          <DOC isOpen={this.state.isOpen} modalClick={this.modalClick}/>
+          <DOJ isOpen={this.state.isOpen} modalClick={this.modalClick}/>
           <USPS isOpen={this.state.isOpen} modalClick={this.modalClick}/>
           <USAF isOpen={this.state.isOpen} modalClick={this.modalClick}/>
           <ODOT isOpen={this.state.isOpen} modalClick={this.modalClick}/>
