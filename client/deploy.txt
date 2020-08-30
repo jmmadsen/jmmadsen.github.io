@@ -1,0 +1,3 @@
+git checkout development
+cd client
+npm run deploy
