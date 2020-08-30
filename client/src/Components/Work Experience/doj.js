@@ -61,7 +61,7 @@ class DOJ extends Component {
           </Container>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={modalClick}>
+          <Button variant="info" onClick={modalClick}>
             Close
           </Button>
         </Modal.Footer>

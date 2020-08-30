@@ -61,7 +61,7 @@ class DOC extends Component {
           </Container>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={modalClick}>
+          <Button style={{ border: '1px solid black' }} variant="light" onClick={modalClick}>
             Close
           </Button>
         </Modal.Footer>
