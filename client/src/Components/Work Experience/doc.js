@@ -28,7 +28,7 @@ class DOC extends Component {
     const { isOpen, modalClick } = this.state;
 
     return (
-      <Modal show={isOpen} onHide={modalClick} size='lg'>
+      <Modal show={isOpen} onHide={() => modalClick(0)} size='lg'>
         <Modal.Header closeButton>
           <Modal.Title>Containerization and DevOps Effort</Modal.Title>
         </Modal.Header>
@@ -61,7 +61,7 @@ class DOC extends Component {
           </Container>
         </Modal.Body>
         <Modal.Footer>
-          <Button style={{ border: '1px solid black' }} variant="light" onClick={modalClick}>
+          <Button variant="primary" onClick={() => modalClick(0)}>
             Close
           </Button>
         </Modal.Footer>

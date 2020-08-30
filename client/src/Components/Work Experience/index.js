@@ -15,7 +15,7 @@ import car from '../../images/car.png';
 import pentagon from '../../images/pentagon.png';
 import blankIcon from '../../images/blankIcon.png';
 
-// TODO - add transitions
+
 class Experience extends Component {
 
   constructor(props){
@@ -31,32 +31,44 @@ class Experience extends Component {
         odot: false,
         pentagon: false
       },
+      isHovered: {
+        doc: false,
+        doj: false,
+        usps: false,
+        usaf: false,
+        odot: false,
+        pentagon: false
+      },
       workExperience: [
         {
+          acronym: 'doc',
           color: 'outline-light',
           bgColor: 'light',
           project: 'US Department of Commerce',
           dates: 'Jun. 2020 - Aug. 2020',
-          role: 'DevOps Developer',
+          role: 'DevOps & AWS Developer',
           icon: doc
         },
         {
+          acronym: 'doj',
           color: 'outline-info',
           bgColor: 'info',
           project: 'US Department of Justice',
           dates: 'May 2020 - Jun. 2020',
-          role: 'UI & Data Analytics Developer',
+          role: 'Data Analytics Developer',
           icon: doj
         },
         {
+          acronym: 'usps',
           color: 'outline-primary',
           bgColor: 'primary',
-          project: 'US Postal Service',
+          project: 'US Postal Service INO',
           dates: 'Jul. 2018 - Apr. 2020',
-          role: 'UI Team Lead / Software Developer',
+          role: 'UI Team Lead / Developer',
           icon: stamp
         },
         {
+          acronym: 'pentagon',
           color: 'outline-warning',
           bgColor: 'success',
           project: 'Pentagon - Food Vendor Solicitation',
@@ -65,14 +77,16 @@ class Experience extends Component {
           icon: pentagon
         },
         {
+          acronym: 'usaf',
           color: 'outline-success',
           bgColor: 'danger',
           project: 'US Air Force Civil Engineers',
           dates: 'Feb. 2018 - Jul. 2018',
-          role: 'Strategy Consultant',
+          role: 'Strategy & Data Consultant',
           icon: airforce
         },
         {
+          acronym: 'odot',
           color: 'outline-danger',
           bgColor: 'warning',
           project: 'Ohio Department of Transportation',
@@ -85,16 +99,9 @@ class Experience extends Component {
 
   }
 
-  handleClick = (num) => {
+  modalClick = (index) => {
 
-    const index = this.state.index + num;
-    this.setState({ index });
-
-  }
-
-  modalClick = () => {
-
-    let { isOpen, index } = this.state;
+    let { isOpen } = this.state;
 
     if (index === 0) {
       isOpen['doc'] = !isOpen['doc'];
@@ -114,79 +121,68 @@ class Experience extends Component {
 
   }
 
+  hoverAction = (card) => {
+
+    let { isHovered } = this.state;
+
+    isHovered[card] = !isHovered[card];
+
+    this.setState({ isHovered });
+
+  }
+
   render = () => {
 
-    const { workExperience, index } = this.state;
+    const { workExperience, isHovered } = this.state;
 
-    const Pic = () => 
+    const Pic = (image) => 
       <Img
         style={{ width: '200px' }} 
-        src={workExperience[index].icon}
+        src={image}
         loader={<img alt='work icon' src={blankIcon} style={{ width: '200px', borderRadius: '150px' }} />}
       />
 
     return (
       <header className="App-experience">
-        <Container>
+        <Container fluid>
           <h1>Work Experience</h1>
           <br/>
-          {
-            index !== 0
-            ? <Row>
-                <Col>
-                  <Button block size={'lg'}
-                    variant={workExperience[index].bgColor}
-                    onClick={ () => this.handleClick(-1) }
-                  >
-                    {'See Previous'}
-                  </Button>
-                </Col>
-              </Row>
-            : null
-          }
-          <br/>
-          <Row>
-            <Col>
-              <Card bg={workExperience[index].bgColor}>
-                <Card.Header as="h2" style={{ backgroundColor: '#282c34' }}>{workExperience[index].project}</Card.Header>
-                <Card.Body style={{ backgroundColor: '#282c34' }}>
-                  <Card.Title>{workExperience[index].dates}</Card.Title>
-                  <Pic/>
-                  <Card.Text>
-                    {workExperience[index].role}
-                  </Card.Text>
-                  <Button
-                    variant={workExperience[index].bgColor}
-                    onClick={ () => this.modalClick() }
-                  >
-                    Learn More
-                  </Button>
-                </Card.Body>
-              </Card>
-            </Col>
+          <Row className="scrolling-wrapper flex-row flex-nowrap mt-4 pb-4">
+            {
+              workExperience.map((card, i) => {
+                return (
+                  <Col key={i}>
+                    <Card 
+                      onMouseOut={() => this.hoverAction(card.acronym)} 
+                      onMouseOver={() => this.hoverAction(card.acronym)} 
+                      bg={isHovered[card.acronym] ? "success" : "primary"}
+                    >
+                      <Card.Header as="h3" style={{ backgroundColor: '#383d47' }}>{card.project}</Card.Header>
+                      <Card.Body style={{ backgroundColor: '#383d47' }}>
+                        <Card.Title>{card.dates}</Card.Title>
+                        {Pic(card.icon)}
+                        <Card.Text>
+                          {card.role}
+                        </Card.Text>
+                        <Button
+                          variant={isHovered[card.acronym] ? "success" : "primary"}
+                          onClick={ () => this.modalClick(i) }
+                        >
+                          Learn More
+                        </Button>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                )
+              })
+            }
+            <DOC isOpen={this.state.isOpen} modalClick={this.modalClick}/>
+            <DOJ isOpen={this.state.isOpen} modalClick={this.modalClick}/>
+            <USPS isOpen={this.state.isOpen} modalClick={this.modalClick}/>
+            <USAF isOpen={this.state.isOpen} modalClick={this.modalClick}/>
+            <ODOT isOpen={this.state.isOpen} modalClick={this.modalClick}/>
+            <Pentagon isOpen={this.state.isOpen} modalClick={this.modalClick}/> 
           </Row>
-          <br/>
-          {
-            index !== workExperience.length - 1
-            ? <Row>
-                <Col>
-                  <Button block size={'lg'}
-                    variant={workExperience[index].bgColor}
-                    onClick={ () => this.handleClick(1) }
-                  >
-                    {'See More'}
-                  </Button>
-                </Col>
-              </Row>
-            : null
-          }
-          <br/>
-          <DOC isOpen={this.state.isOpen} modalClick={this.modalClick}/>
-          <DOJ isOpen={this.state.isOpen} modalClick={this.modalClick}/>
-          <USPS isOpen={this.state.isOpen} modalClick={this.modalClick}/>
-          <USAF isOpen={this.state.isOpen} modalClick={this.modalClick}/>
-          <ODOT isOpen={this.state.isOpen} modalClick={this.modalClick}/>
-          <Pentagon isOpen={this.state.isOpen} modalClick={this.modalClick}/>
         </Container>
       </header>
     )

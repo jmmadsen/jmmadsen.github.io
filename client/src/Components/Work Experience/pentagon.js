@@ -28,7 +28,7 @@ class Pentagon extends Component {
     const { isOpen, modalClick } = this.state;
 
     return (
-      <Modal show={isOpen} onHide={modalClick} size='lg'>
+      <Modal show={isOpen} onHide={() => modalClick(3)} size='lg'>
         <Modal.Header closeButton>
           <Modal.Title>Navy Exchange Food Vendor Contract</Modal.Title>
         </Modal.Header>
@@ -66,7 +66,7 @@ class Pentagon extends Component {
           </Container>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="success" onClick={modalClick}>
+          <Button variant="primary" onClick={() => modalClick(3)}>
             Close
           </Button>
         </Modal.Footer>

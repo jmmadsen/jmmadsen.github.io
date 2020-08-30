@@ -28,14 +28,14 @@ class USPS extends Component {
     const { isOpen, modalClick } = this.state;
 
     return (
-      <Modal show={isOpen} onHide={modalClick} size='lg'>
+      <Modal show={isOpen} onHide={() => modalClick(2)} size='lg'>
         <Modal.Header closeButton>
           <Modal.Title>Blockchain Implementation</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Container>
             <Row>
-              This engagement was a blockchain implementation for the USPS International Shipping division. I began as a UI developer,
+              This engagement was a blockchain implementation for the USPS International Operations division. I began as a UI developer,
               building an analytics dashboard to intuitively display the millions of transactions recorded by the blockchain.
               As the project grew, I moved into the role of the UI Team Lead. I was responsible for the features implemented by a 
               team of six developers. I spent about 50% of my time writing code, and another 50% managing the direction
@@ -66,7 +66,7 @@ class USPS extends Component {
           </Container>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={modalClick}>
+          <Button variant="primary" onClick={() => modalClick(2)}>
             Close
           </Button>
         </Modal.Footer>

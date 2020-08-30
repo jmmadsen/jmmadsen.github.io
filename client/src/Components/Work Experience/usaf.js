@@ -28,7 +28,7 @@ class USAF extends Component {
     const { isOpen, modalClick } = this.state;
 
     return (
-      <Modal show={isOpen} onHide={modalClick} size='lg'>
+      <Modal show={isOpen} onHide={() => modalClick(4)} size='lg'>
         <Modal.Header closeButton>
           <Modal.Title>USAF CE Strategy Engagement</Modal.Title>
         </Modal.Header>
@@ -64,7 +64,7 @@ class USAF extends Component {
           </Container>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="danger" onClick={modalClick}>
+          <Button variant="primary" onClick={() => modalClick(4)}>
             Close
           </Button>
         </Modal.Footer>

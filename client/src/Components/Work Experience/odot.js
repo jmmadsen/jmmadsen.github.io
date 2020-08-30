@@ -28,7 +28,7 @@ class ODOT extends Component {
     const { isOpen, modalClick } = this.state;
 
     return (
-      <Modal show={isOpen} onHide={modalClick} size='lg'>
+      <Modal show={isOpen} onHide={() => modalClick(5)} size='lg'>
         <Modal.Header closeButton>
           <Modal.Title>PeopleSoft Implementation</Modal.Title>
         </Modal.Header>
@@ -70,7 +70,7 @@ class ODOT extends Component {
           </Container>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="warning" onClick={modalClick}>
+          <Button variant="primary" onClick={() => modalClick(5)}>
             Close
           </Button>
         </Modal.Footer>

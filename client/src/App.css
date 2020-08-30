@@ -56,6 +56,45 @@
   }
 }
 
+.scrolling-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* white-space: nowrap; */
+  /* -webkit-overflow-scrolling: touch; */
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  display: inline-block;
+  max-width: 275px;
+  min-width: 275px;
+  flex: none;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  border-width: 1px;
+}
+
+.card:hover {
+  outline-color: green;
+}
+
+/* .scrolling-wrapper > .row {
+  overflow-x: auto;
+  white-space: nowrap;
+  display: block;
+  flex-wrap: nowrap;
+}
+
+.scrolling-wrapper > .row > .col {
+  display: inline-block;
+  float: none;
+} */
+
+
+
 /*
 below is css for rotating cube on home page
 */
