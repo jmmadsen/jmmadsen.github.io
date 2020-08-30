@@ -59,8 +59,6 @@
 .scrolling-wrapper {
   overflow-x: auto;
   overflow-y: hidden;
-  /* white-space: nowrap; */
-  /* -webkit-overflow-scrolling: touch; */
 }
 
 .scrolling-wrapper::-webkit-scrollbar {
@@ -80,18 +78,6 @@
 .card:hover {
   outline-color: green;
 }
-
-/* .scrolling-wrapper > .row {
-  overflow-x: auto;
-  white-space: nowrap;
-  display: block;
-  flex-wrap: nowrap;
-}
-
-.scrolling-wrapper > .row > .col {
-  display: inline-block;
-  float: none;
-} */
 
 
 
