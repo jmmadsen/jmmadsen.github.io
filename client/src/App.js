@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import { Route, Switch, HashRouter } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
-import './App.css';
+import './App.scss';
 import Home from './Components/Home/index.js';
 import About from './Components/About/index.js';
 import Experience from './Components/Work Experience/index.js';

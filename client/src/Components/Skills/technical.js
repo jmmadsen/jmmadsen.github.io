@@ -258,8 +258,8 @@ class Technical extends Component {
               </Row>
               <br/>
               <p>
-                I am experienced in modern software development tools, processes, and best practices. I understand and
-                regularly work with microserviced architecture.
+                I am experienced in modern software development tools, processes, and best practices. I
+                regularly work with modern, microserviced cloud architectures.
               </p>
             </Col>
           </div>

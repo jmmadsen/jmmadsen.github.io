@@ -1,0 +1,432 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.contact-icon {
+  transition: transform .2s;
+}
+
+.contact-icon:hover {
+  transform: scale(1.15);
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-about, .App-experience, .App-contact, .App-skills, .App-education {
+  padding-top: 50px;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.scrolling-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  display: inline-block;
+  max-width: 275px;
+  min-width: 275px;
+  flex: none;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  border-width: 1px;
+}
+
+.card:hover {
+  outline-color: green;
+}
+
+
+
+/*
+below is css for first animation on home page
+*/
+
+
+
+section {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.illustration {
+	display: block;
+	position: relative;
+	width: auto;
+	height: 90%;
+	margin: 0 auto;
+	top: 50%;
+	transform: translateY(40%);
+}
+
+.hover {
+	width: 100%;
+	height: 70%;
+	animation: hover 5s ease-in-out infinite;
+	animation-fill-mode: forwards;
+}
+
+.number-one {
+	transform: translateY(-10px) translateZ(0);
+	opacity: 0;
+	animation: fadeNumberDown-10 (random(4000) + 2000)+ms ease-in-out infinite;
+	animation-fill-mode: forwards;
+}
+
+.number-two {
+	transform: translateY(-20px) translateZ(0);
+	opacity: 0;
+	animation: fadeNumberDown-20 (random(4000) + 2000)+ms ease-in-out infinite;
+	animation-delay: random(6000) * 1ms;
+	animation-fill-mode: forwards;
+}
+
+.number-three {
+	transform: translateY(-30px) translateZ(0);
+	opacity: 0;
+	animation: fadeNumberDown-30 (random(4000) + 2000)+ms ease-in-out infinite;
+	animation-delay: random(6000) * 1ms;
+	animation-fill-mode: forwards;
+}
+
+.number-four {
+	transform: translateY(-50px) translateZ(0);
+	opacity: 0;
+	animation: fadeNumberDown-50 (random(4000) + 2000)+ms ease-in-out infinite;
+	animation-delay: random(6000) * 1ms;
+	animation-fill-mode: forwards;
+}
+
+.number-five {
+	transform: translateY(-60px) translateZ(0);
+	opacity: 0;
+	animation: fadeNumberDown-60 (random(4000) + 2000)+ms ease-in-out infinite;
+	animation-delay: random(6000) * 1ms;
+	animation-fill-mode: forwards;
+}
+
+.number-six {
+	transform: translateY(-70px) translateZ(0);
+	opacity: 0;
+	animation: fadeNumberDown-70 (random(4000) + 2000)+ms ease-in-out infinite;
+	animation-delay: random(6000) * 1ms;
+	animation-fill-mode: forwards;
+}
+
+.number-seven {
+	transform: translateY(-80px) translateZ(0);
+	opacity: 0;
+	animation: fadeNumberDown-80 (random(4000) + 2000)+ms ease-in-out infinite;
+	animation-delay: random(6000) * 1ms;
+	animation-fill-mode: forwards;
+}
+
+.number-eight {
+	transform: translateY(-90px) translateZ(0);
+	opacity: 0;
+	animation: fadeNumberDown-90 (random(4000) + 2000)+ms ease-in-out infinite;
+	animation-delay: random(6000) * 1ms;
+	animation-fill-mode: forwards;
+}
+
+.number-nine {
+	transform: translateY(-100px) translateZ(0);
+	opacity: 0;
+	animation: fadeNumberDown-100 (random(4000) + 2000)+ms ease-in-out infinite;
+	animation-delay: random(6000) * 1ms;
+	animation-fill-mode: forwards;
+}
+
+.number-ten {
+	transform: translateY(-110px) translateZ(0);
+	opacity: 0;
+	animation: fadeNumberDown-110 (random(4000) + 2000)+ms ease-in-out infinite;
+	animation-delay: random(6000) * 1ms;
+	animation-fill-mode: forwards;
+}
+
+.number-eleven {
+	transform: translateY(-120px) translateZ(0);
+	opacity: 0;
+	animation: fadeNumberDown-120 (random(4000) + 2000)+ms ease-in-out infinite;
+	animation-delay: random(6000) * 1ms;
+	animation-fill-mode: forwards;
+}
+
+.number-twelve {
+	transform: translateY(-150px) translateZ(0);
+	opacity: 0;
+	animation: fadeNumberDown-150 (random(4000) + 2000)+ms ease-in-out infinite;
+	animation-delay: random(6000) * 1ms;
+	animation-fill-mode: forwards;
+}
+
+.number-thirteen {
+	transform: translateY(-160px) translateZ(0);
+	opacity: 0;
+	animation: fadeNumberDown-160 (random(4000) + 2000)+ms ease-in-out infinite;
+	animation-delay: random(6000) * 1ms;
+	animation-fill-mode: forwards;
+}
+
+@keyframes hover {
+	0% { transform: translateY(0) }
+	25% { transform: translateY(-3px) }
+	75% { transform: translateY(3px) }
+	100% { transform: translateY(0) }
+}
+
+// Params: $tstart = translate offset (start point), $tend = translate length (end point)
+@mixin generateNumAnimation($tstart, $tend) {
+	@keyframes fadeNumberDown-#{$tstart} {
+		0% {
+			transform: translateY(-$tstart * 1px) translateZ(0);
+				opacity: 0;
+				}
+		40% { opacity: 0.4; }
+		60% { opacity: 0.4; }
+		100% {
+			transform: translateY($tend * 1px) translateZ(0);
+			opacity: 0;
+		}
+	}
+}
+
+// Create keyframes
+// Number one
+@include generateNumAnimation(10, 140);
+// Number two
+@include generateNumAnimation(20, 140);
+// Number three
+@include generateNumAnimation(30, 130);
+// Number four
+@include generateNumAnimation(50, 110);
+// Number five
+@include generateNumAnimation(60, 90);
+// Number six
+@include generateNumAnimation(70, 80);
+// Number seven
+@include generateNumAnimation(80, 80);
+// Number eight
+@include generateNumAnimation(90, 60);
+// Number nine
+@include generateNumAnimation(100, 60);
+// Number ten
+@include generateNumAnimation(110, 30);
+// Number eleven
+@include generateNumAnimation(120, 20);
+// Number twelve
+@include generateNumAnimation(150, 10);
+// Number thirteen
+@include generateNumAnimation(160, 10);
+
+
+
+/*
+below is css for first animation on home page
+*/
+
+
+
+/* reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* other */
+.info {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* block-$ */
+.block-effect {
+  font-size: calc(8px + 6vw);
+}
+
+.block-reveal {
+  --t: calc(var(--td) + var(--d));
+
+  color: transparent;
+  padding: 4px;
+
+  position: relative;
+  overflow: hidden;
+
+  animation: revealBlock 0s var(--t) forwards;
+}
+
+.block-reveal::after {
+  content: '';
+
+  width: 0%;
+  height: 100%;
+  padding-bottom: 4px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background: var(--bc);
+  animation: revealingIn var(--td) var(--d) forwards, revealingOut var(--td) var(--t) forwards;
+}
+
+
+/* animations */
+@keyframes revealBlock {
+  100% {
+    color: white;
+  }
+}
+
+@keyframes revealingIn {
+
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes revealingOut {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+
+}
+
+.abs-site-link {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: hsla(0, 0%, 0%, .6);
+  font-size: 16px;
+}
+
+.sliding-vertical{
+  display: flex;
+  justify-content: center;
+}
+
+.sliding-vertical span{
+	animation: topToBottom 12.5s linear infinite 0s;
+	-ms-animation: topToBottom 12.5s linear infinite 0s;
+	-webkit-animation: topToBottom 12.5s linear infinite 0s;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
+
+.sliding-vertical span:nth-child(2){
+	animation-delay: 2.5s;
+	-ms-animation-delay: 2.5s;
+	-webkit-animation-delay: 2.5s;
+}
+
+.sliding-vertical span:nth-child(3){
+	animation-delay: 5s;
+	-ms-animation-delay: 5s;
+	-webkit-animation-delay: 5s;
+}
+
+.sliding-vertical span:nth-child(4){
+	animation-delay: 7.5s;
+	-ms-animation-delay: 7.5s;
+	-webkit-animation-delay: 7.5s;
+}
+
+/*topToBottom Animation*/
+@keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -moz-transform: translateY(-50px); }
+	10% { opacity: 1; -moz-transform: translateY(0px); }
+	25% { opacity: 1; -moz-transform: translateY(0px); }
+	30% { opacity: 0; -moz-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+@-moz-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -moz-transform: translateY(-50px); }
+	10% { opacity: 1; -moz-transform: translateY(0px); }
+	25% { opacity: 1; -moz-transform: translateY(0px); }
+	30% { opacity: 0; -moz-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+@-webkit-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform: translateY(-50px); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); }
+	25% { opacity: 1; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+@-ms-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -ms-transform: translateY(-50px); }
+	10% { opacity: 1; -ms-transform: translateY(0px); }
+	25% { opacity: 1; -ms-transform: translateY(0px); }
+	30% { opacity: 0; -ms-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
