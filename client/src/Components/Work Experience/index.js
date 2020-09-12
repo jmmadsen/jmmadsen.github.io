@@ -91,7 +91,7 @@ class Experience extends Component {
           bgColor: 'warning',
           project: 'Ohio Department of Transportation',
           dates: 'Sept. 2016 - Feb. 2018',
-          role: 'Functional Consultant',
+          role: 'PeopleSoft HR Consultant',
           icon: car
         }
       ]
