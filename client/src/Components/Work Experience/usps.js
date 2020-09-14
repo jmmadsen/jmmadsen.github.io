@@ -28,7 +28,7 @@ class USPS extends Component {
     const { isOpen, modalClick } = this.state;
 
     return (
-      <Modal show={isOpen} onHide={() => modalClick(2)} size='lg'>
+      <Modal show={isOpen} onHide={() => modalClick(3)} size='lg'>
         <Modal.Header closeButton>
           <Modal.Title>Blockchain Implementation</Modal.Title>
         </Modal.Header>
@@ -66,7 +66,7 @@ class USPS extends Component {
           </Container>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={() => modalClick(2)}>
+          <Button variant="primary" onClick={() => modalClick(3)}>
             Close
           </Button>
         </Modal.Footer>
