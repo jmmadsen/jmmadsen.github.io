@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { Button, Container, Row, Col, Card } from 'react-bootstrap';
 import Img from 'react-image';
+import VA from './va';
 import DOC from './doc';
 import DOJ from './doj';
 import USPS from './usps';
 import USAF from './usaf';
 import ODOT from './odot';
 import Pentagon from './pentagon';
+import va from '../../images/soldier.png';
 import doc from '../../images/doc.png';
 import doj from '../../images/doj.png';
 import stamp from '../../images/stamp.png';
@@ -24,6 +26,7 @@ class Experience extends Component {
     this.state = {
       index: 0,
       isOpen: {
+        va: false,
         doc: false,
         doj: false,
         usps: false,
@@ -32,6 +35,7 @@ class Experience extends Component {
         pentagon: false
       },
       isHovered: {
+        va: false,
         doc: false,
         doj: false,
         usps: false,
@@ -40,6 +44,15 @@ class Experience extends Component {
         pentagon: false
       },
       workExperience: [
+        {
+          acronym: 'va',
+          color: 'outline-light',
+          bgColor: 'light',
+          project: 'US Department of Veterans Affairs',
+          dates: 'Aug. 2020 - Present',
+          role: 'Full Stack Integration Developer',
+          icon: va
+        },
         {
           acronym: 'doc',
           color: 'outline-light',
@@ -104,14 +117,16 @@ class Experience extends Component {
     let { isOpen } = this.state;
 
     if (index === 0) {
-      isOpen['doc'] = !isOpen['doc'];
+      isOpen['va'] = !isOpen['va'];
     } else if (index === 1) {
-      isOpen['doj'] = !isOpen['doj'];
+      isOpen['doc'] = !isOpen['doc'];
     } else if (index === 2) {
-      isOpen['usps'] = !isOpen['usps'];
+      isOpen['doj'] = !isOpen['doj'];
     } else if (index === 3) {
-      isOpen['pentagon'] = !isOpen['pentagon'];
+      isOpen['usps'] = !isOpen['usps'];
     } else if (index === 4) {
+      isOpen['pentagon'] = !isOpen['pentagon'];
+    } else if (index === 5) {
       isOpen['usaf'] = !isOpen['usaf'];
     } else {
       isOpen['odot'] = !isOpen['odot'];
@@ -176,6 +191,7 @@ class Experience extends Component {
                 )
               })
             }
+            <VA isOpen={this.state.isOpen} modalClick={this.modalClick}/>
             <DOC isOpen={this.state.isOpen} modalClick={this.modalClick}/>
             <DOJ isOpen={this.state.isOpen} modalClick={this.modalClick}/>
             <USPS isOpen={this.state.isOpen} modalClick={this.modalClick}/>
