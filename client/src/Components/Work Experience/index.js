@@ -50,7 +50,7 @@ class Experience extends Component {
           bgColor: 'light',
           project: 'US Department of Veterans Affairs',
           dates: 'Aug. 2020 - Present',
-          role: 'Full Stack Integration Developer',
+          role: 'Full Stack & AWS Developer',
           icon: va
         },
         {
