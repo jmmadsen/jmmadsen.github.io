@@ -40,17 +40,17 @@ class VA extends Component {
             </Row>
             <br/>
             <Row>
-              I worked the following technologies for this role:
+              I am working with the following technologies for this role:
             </Row>
             <br/>
             <Row>
               <Col>
                 <li>Docker</li>
-                <li>Docker-Compose</li>
+                <li>IAM, SSO, and Integration APIs</li>
               </Col>
               <Col>
                 <li>AWS EC2</li>
-                <li>Keycloak and RHEL</li>
+                <li>RHEL</li>
               </Col>
             </Row>
           </Container>

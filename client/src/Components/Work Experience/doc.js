@@ -43,7 +43,7 @@ class DOC extends Component {
             </Row>
             <br/>
             <Row>
-              I worked the following technologies for this role:
+              I worked with the following technologies for this role:
             </Row>
             <br/>
             <Row>
