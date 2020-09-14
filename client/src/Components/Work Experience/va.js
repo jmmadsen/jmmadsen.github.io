@@ -35,8 +35,8 @@ class VA extends Component {
         <Modal.Body>
           <Container>
             <Row>
-              Currently a full stack engineer on an automation initiativefor the Department of Veterans Affairs. I am working on integrating Appian and homegrown applications with
-              with IAM and identity management tools.
+              Currently a full stack engineer on an automation initiativefor the Department of Veterans Affairs. I am working on 
+              integrating Appian and homegrown applications with IAM and SSO tools.
             </Row>
             <br/>
             <Row>
