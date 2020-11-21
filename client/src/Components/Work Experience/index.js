@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Container, Row, Col, Card } from 'react-bootstrap';
 import Img from 'react-image';
+import GSA from './gsa';
 import VA from './va';
 import DOC from './doc';
 import DOJ from './doj';
@@ -8,6 +9,7 @@ import USPS from './usps';
 import USAF from './usaf';
 import ODOT from './odot';
 import Pentagon from './pentagon';
+import gsa from '../../images/aws.png';
 import va from '../../images/soldier.png';
 import doc from '../../images/doc.png';
 import doj from '../../images/doj.png';
@@ -26,6 +28,7 @@ class Experience extends Component {
     this.state = {
       index: 0,
       isOpen: {
+        gsa: false,
         va: false,
         doc: false,
         doj: false,
@@ -35,6 +38,7 @@ class Experience extends Component {
         pentagon: false
       },
       isHovered: {
+        gsa: false,
         va: false,
         doc: false,
         doj: false,
@@ -44,6 +48,15 @@ class Experience extends Component {
         pentagon: false
       },
       workExperience: [
+        {
+          acronym: 'gsa',
+          color: 'outline-danger',
+          bgColor: 'light',
+          project: 'General Services Administration',
+          dates: 'Nov. 2020 - Present',
+          role: 'Lead AWS Architect & Developer',
+          icon: gsa
+        },
         {
           acronym: 'va',
           color: 'outline-light',
@@ -117,16 +130,18 @@ class Experience extends Component {
     let { isOpen } = this.state;
 
     if (index === 0) {
-      isOpen['va'] = !isOpen['va'];
+      isOpen['gsa'] = !isOpen['gsa'];
     } else if (index === 1) {
-      isOpen['doc'] = !isOpen['doc'];
+      isOpen['va'] = !isOpen['va'];
     } else if (index === 2) {
-      isOpen['doj'] = !isOpen['doj'];
+      isOpen['doc'] = !isOpen['doc'];
     } else if (index === 3) {
-      isOpen['usps'] = !isOpen['usps'];
+      isOpen['doj'] = !isOpen['doj'];
     } else if (index === 4) {
-      isOpen['pentagon'] = !isOpen['pentagon'];
+      isOpen['usps'] = !isOpen['usps'];
     } else if (index === 5) {
+      isOpen['pentagon'] = !isOpen['pentagon'];
+    } else if (index === 6) {
       isOpen['usaf'] = !isOpen['usaf'];
     } else {
       isOpen['odot'] = !isOpen['odot'];
@@ -191,6 +206,7 @@ class Experience extends Component {
                 )
               })
             }
+            <GSA isOpen={this.state.isOpen} modalClick={this.modalClick}/>
             <VA isOpen={this.state.isOpen} modalClick={this.modalClick}/>
             <DOC isOpen={this.state.isOpen} modalClick={this.modalClick}/>
             <DOJ isOpen={this.state.isOpen} modalClick={this.modalClick}/>

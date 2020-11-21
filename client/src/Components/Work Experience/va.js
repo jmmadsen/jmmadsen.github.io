@@ -28,15 +28,18 @@ class VA extends Component {
     const { isOpen, modalClick } = this.state;
 
     return (
-      <Modal show={isOpen} onHide={() => modalClick(0)} size='lg'>
+      <Modal show={isOpen} onHide={() => modalClick(1)} size='lg'>
         <Modal.Header closeButton>
           <Modal.Title>Full Stack Engineer</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Container>
             <Row>
-              Currently a full stack engineer on an automation initiativefor the Department of Veterans Affairs. I am working on 
-              integrating Appian and homegrown applications with IAM and SSO tools.
+              Currently a full stack engineer on an automation initiative for the Department of Veterans Affairs. I am working on 
+              integrating Appian and homegrown applications with IAM and SSO tools. Some of my tasks have included integrating DoD CAC card
+              credentials with Keycloak for a seamless SSO process for government employees, creating health check and cron job microservices
+              to monitor and update various critical applications, integrating our services with Elasticsearch to provide a holistic view of our
+              stack, and orchestrating/deploying our containerized applications into AWS.
             </Row>
             <br/>
             <Row>
@@ -46,17 +49,20 @@ class VA extends Component {
             <Row>
               <Col>
                 <li>Docker</li>
-                <li>IAM, SSO, and Integration APIs</li>
+                <li>Filebeats</li>
+                <li>ElasticSearch</li>
+                <li>Kibana</li>
               </Col>
               <Col>
-                <li>AWS EC2</li>
+                <li>AWS GovCloud</li>
                 <li>RHEL</li>
+                <li>IAM, SSO, and Integration APIs</li>
               </Col>
             </Row>
           </Container>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={() => modalClick(0)}>
+          <Button variant="primary" onClick={() => modalClick(1)}>
             Close
           </Button>
         </Modal.Footer>

@@ -15,6 +15,9 @@ import npm from '../../images/npm.png';
 import gitlab from '../../images/gitlab.png';
 import docker from '../../images/docker.png';
 import ibmcloud from '../../images/ibmcloud.png';
+import aws from '../../images/aws.png';
+import gcp from '../../images/gcp.png';
+import elk from '../../images/elk.png';
 
 class Technical extends Component {
 
@@ -49,6 +52,56 @@ class Technical extends Component {
         <br/>
         <Row>
           <div>
+          <br/>
+            <Col>
+              <h2>
+                Cloud Development
+              </h2>
+              <br/>
+              <Row>
+                <Col>
+                  <Figure style={{ display: 'inline-block' }}>
+                    <Figure.Image
+                      onLoad={ () => this.loaded('one') }
+                      width={140}
+                      height={90}
+                      src={aws}
+                    />
+                  </Figure>
+                </Col>
+                <Col>
+                  <Figure style={{ display: 'inline-block' }}>
+                    <Figure.Image
+                      onLoad={ () => this.loaded('two') }
+                      width={140}
+                      height={90}
+                      src={ibmcloud}
+                    />
+                  </Figure>
+                </Col>
+                <Col>
+                  <Figure style={{ display: 'inline-block' }}>
+                    <Figure.Image
+                      onLoad={ () => this.loaded('three') }
+                      width={140}
+                      height={90}
+                      src={gcp}
+                    />
+                  </Figure>
+                </Col>
+              </Row>
+              <br/>
+              <p>
+                I have hands on experience taking cloud environments to production, most commonly AWS GovCloud and IBM Cloud.
+                I frequently architect and author cloud architectures for Federal RFPs.
+              </p>
+            </Col>
+          </div>
+        </Row>
+        <br/>
+        <Row>
+          <div>
+          <hr style={{ border: '3px solid #007BFF' }}/>
           <br/>
             <Col>
               <h2>
@@ -99,8 +152,10 @@ class Technical extends Component {
               </Row>
               <br/>
               <p>
-                I use JavaScript on a daily basis, and have experience building websites and 
-                user interfaces with React (including this website).
+                I have experience building user interfaces with JavaScript and React (including this website). I am 
+                also currently an open source contributor for
+                <a href="https://github.com/odpi/egeria" target="_blank" rel="noopener noreferrer"> Egeria</a>
+                , with multiple PRs committed into master.
               </p>
             </Col>
           </div>
@@ -139,7 +194,7 @@ class Technical extends Component {
                     <Figure.Image
                       width={140}
                       height={90}
-                      src={ibmcloud}
+                      src={rest}
                     />
                   </Figure>
                 </Col>
@@ -148,15 +203,15 @@ class Technical extends Component {
                     <Figure.Image
                       width={140}
                       height={90}
-                      src={rest}
+                      src={elk}
                     />
                   </Figure>
                 </Col>
               </Row>
               <br/>
               <p>
-                I am very familiar with using Node.js and Express to build APIs. I also 
-                have experience with database design and management using PostgreSQL.
+                I am very familiar with using Node.js to build APIs, and  frequently connect and work 
+                with open-source databases and RDS's. I also love working with the ELK stack.
               </p>
             </Col>
           </div>
