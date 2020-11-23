@@ -54,7 +54,7 @@ class Experience extends Component {
           bgColor: 'light',
           project: 'General Services Administration',
           dates: 'Nov. 2020 - Present',
-          role: 'Lead AWS Architect & Developer',
+          role: 'AWS Architect & Developer',
           icon: gsa
         },
         {
