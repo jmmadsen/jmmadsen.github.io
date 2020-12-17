@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Img from 'react-image';
 import me from '../../images/me4.jpg';
-import resume from './resume.pdf';
+import resume from './Jacob Madsen Resume Winter 2021.pdf';
 
 class About extends Component {
 
