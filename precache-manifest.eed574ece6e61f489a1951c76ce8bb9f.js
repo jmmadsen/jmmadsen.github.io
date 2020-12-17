@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "10046b27c3f4975b57dc370fa8ee43ae",
+    "revision": "785c3b932a474ea7c58f81f5e64f838d",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "ab54f888f12e43fd0f99",
+    "revision": "8bac68c2673b6ec6c3df",
     "url": "/static/css/main.f211ed65.chunk.css"
   },
   {
@@ -20,12 +20,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.5260eb1f.chunk.js.LICENSE"
   },
   {
-    "revision": "ab54f888f12e43fd0f99",
-    "url": "/static/js/main.b46ce286.chunk.js"
+    "revision": "8bac68c2673b6ec6c3df",
+    "url": "/static/js/main.80c44006.chunk.js"
   },
   {
     "revision": "6b3defdcd169e5f902d5",
     "url": "/static/js/runtime-main.1dc66141.js"
+  },
+  {
+    "revision": "d843855a0f3fb250964484e0ea07b494",
+    "url": "/static/media/Jacob Madsen Resume Winter 2021.d843855a.pdf"
   },
   {
     "revision": "39ce6163b91f74407368841383dfc47a",
@@ -190,10 +194,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "684fa8b7c0a1283c896852c05fb059c4",
     "url": "/static/media/rest.684fa8b7.png"
-  },
-  {
-    "revision": "416f5e9391addefdfb35b0750fdaf132",
-    "url": "/static/media/resume.416f5e93.pdf"
   },
   {
     "revision": "4fed3e8c348e7e9762a35ac91148bac6",
