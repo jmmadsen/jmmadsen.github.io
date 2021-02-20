@@ -35,15 +35,15 @@ class VA extends Component {
         <Modal.Body>
           <Container>
             <Row>
-              Currently a full stack engineer on an automation initiative for the Department of Veterans Affairs. I am working on 
-              integrating Appian and homegrown applications with IAM and SSO tools. Some of my tasks have included integrating DoD CAC card
+              Full stack engineer on an automation initiative for the Department of Veterans Affairs. I worked on 
+              integrating Appian and homegrown applications with IAM and SSO tools. Some of my tasks included integrating DoD CAC card
               credentials with Keycloak for a seamless SSO process for government employees, creating health check and cron job microservices
               to monitor and update various critical applications, integrating our services with Elasticsearch to provide a holistic view of our
               stack, and orchestrating/deploying our containerized applications into AWS.
             </Row>
             <br/>
             <Row>
-              I am working with the following technologies for this role:
+              I worked with the following technologies for this role:
             </Row>
             <br/>
             <Row>

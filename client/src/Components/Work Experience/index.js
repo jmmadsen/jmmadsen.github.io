@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Button, Container, Row, Col, Card } from 'react-bootstrap';
+import { Button, Container, Row, Col, Card, Tabs, Tab } from 'react-bootstrap';
 import Img from 'react-image';
+import Vault from './vault';
 import GSA from './gsa';
 import VA from './va';
 import DOC from './doc';
@@ -26,18 +27,9 @@ class Experience extends Component {
     super(props);
 
     this.state = {
-      index: 0,
+      index: -1,
       isOpen: {
-        gsa: false,
-        va: false,
-        doc: false,
-        doj: false,
-        usps: false,
-        usaf: false,
-        odot: false,
-        pentagon: false
-      },
-      isHovered: {
+        vault: false,
         gsa: false,
         va: false,
         doc: false,
@@ -49,11 +41,20 @@ class Experience extends Component {
       },
       workExperience: [
         {
+          acronym: 'vault',
+          color: 'outline-danger',
+          bgColor: 'light',
+          project: 'US Air Force - Code Challenge',
+          dates: 'Jan. 2021',
+          role: 'Developer & UI Team Lead',
+          icon: airforce
+        },
+        {
           acronym: 'gsa',
           color: 'outline-danger',
           bgColor: 'light',
           project: 'General Services Administration',
-          dates: 'Nov. 2020 - Present',
+          dates: 'Nov. 2020 - Feb. 2021',
           role: 'AWS Architect & Developer',
           icon: gsa
         },
@@ -62,7 +63,7 @@ class Experience extends Component {
           color: 'outline-light',
           bgColor: 'light',
           project: 'US Department of Veterans Affairs',
-          dates: 'Aug. 2020 - Present',
+          dates: 'Aug. 2020 - Feb. 2021',
           role: 'Full Stack & AWS Developer',
           icon: va
         },
@@ -129,7 +130,9 @@ class Experience extends Component {
 
     let { isOpen } = this.state;
 
-    if (index === 0) {
+    if (index === -1) {
+      isOpen['vault'] = !isOpen['vault'];
+    } else if (index === 0) {
       isOpen['gsa'] = !isOpen['gsa'];
     } else if (index === 1) {
       isOpen['va'] = !isOpen['va'];
@@ -151,19 +154,9 @@ class Experience extends Component {
 
   }
 
-  hoverAction = (card) => {
-
-    let { isHovered } = this.state;
-
-    isHovered[card] = !isHovered[card];
-
-    this.setState({ isHovered });
-
-  }
-
   render = () => {
 
-    const { workExperience, isHovered } = this.state;
+    const { workExperience } = this.state;
 
     const Pic = (image) => 
       <Img
@@ -177,44 +170,58 @@ class Experience extends Component {
         <Container fluid>
           <h1>Work Experience</h1>
           <br/>
-          <Row className="scrolling-wrapper flex-row flex-nowrap mt-4 pb-4">
-            {
-              workExperience.map((card, i) => {
-                return (
-                  <Col key={i}>
-                    <Card 
-                      onMouseOut={() => this.hoverAction(card.acronym)} 
-                      onMouseOver={() => this.hoverAction(card.acronym)} 
-                      bg={isHovered[card.acronym] ? "success" : "primary"}
-                    >
-                      <Card.Header as="h3" style={{ backgroundColor: '#383d47' }}>{card.project}</Card.Header>
-                      <Card.Body style={{ backgroundColor: '#383d47' }}>
-                        <Card.Title>{card.dates}</Card.Title>
-                        {Pic(card.icon)}
-                        <Card.Text>
-                          {card.role}
-                        </Card.Text>
-                        <Button
-                          variant={isHovered[card.acronym] ? "success" : "primary"}
-                          onClick={ () => this.modalClick(i) }
+          <Tabs defaultActiveKey="ibm" style={{ color: 'green' }}>
+            <Tab eventKey="deloitte" title="Deloitte" disabled>
+              <Col>
+                Mar. 2021 - Present
+              </Col>
+            </Tab>
+            <Tab eventKey="ibm" title="IBM">
+              <Row>
+                <Col>
+                  Aug. 2016 - Feb. 2021
+                </Col>
+              </Row>
+              <Row className="scrolling-wrapper flex-row flex-nowrap mt-4 pb-4">
+                {
+                  workExperience.map((card, i) => {
+                    return (
+                      <Col key={i - 1}>
+                        <Card 
+                          bg="primary"
                         >
-                          Learn More
-                        </Button>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                )
-              })
-            }
-            <GSA isOpen={this.state.isOpen} modalClick={this.modalClick}/>
-            <VA isOpen={this.state.isOpen} modalClick={this.modalClick}/>
-            <DOC isOpen={this.state.isOpen} modalClick={this.modalClick}/>
-            <DOJ isOpen={this.state.isOpen} modalClick={this.modalClick}/>
-            <USPS isOpen={this.state.isOpen} modalClick={this.modalClick}/>
-            <USAF isOpen={this.state.isOpen} modalClick={this.modalClick}/>
-            <ODOT isOpen={this.state.isOpen} modalClick={this.modalClick}/>
-            <Pentagon isOpen={this.state.isOpen} modalClick={this.modalClick}/> 
-          </Row>
+                          <Card.Header as="h3" style={{ backgroundColor: '#383d47' }}>{card.project}</Card.Header>
+                          <Card.Body style={{ backgroundColor: '#383d47' }}>
+                            <Card.Title>{card.dates}</Card.Title>
+                            {Pic(card.icon)}
+                            <Card.Text>
+                              {card.role}
+                            </Card.Text>
+                            <Button
+                              variant="primary"
+                              onClick={ () => this.modalClick(i - 1) }
+                            >
+                              Learn More
+                            </Button>
+                          </Card.Body>
+                        </Card>
+                      </Col>
+                    )
+                  })
+                }
+                <Vault isOpen={this.state.isOpen} modalClick={this.modalClick}/>
+                <GSA isOpen={this.state.isOpen} modalClick={this.modalClick}/>
+                <VA isOpen={this.state.isOpen} modalClick={this.modalClick}/>
+                <DOC isOpen={this.state.isOpen} modalClick={this.modalClick}/>
+                <DOJ isOpen={this.state.isOpen} modalClick={this.modalClick}/>
+                <USPS isOpen={this.state.isOpen} modalClick={this.modalClick}/>
+                <USAF isOpen={this.state.isOpen} modalClick={this.modalClick}/>
+                <ODOT isOpen={this.state.isOpen} modalClick={this.modalClick}/>
+                <Pentagon isOpen={this.state.isOpen} modalClick={this.modalClick}/> 
+              </Row>
+            </Tab>
+          </Tabs>
+          <br/>
         </Container>
       </header>
     )

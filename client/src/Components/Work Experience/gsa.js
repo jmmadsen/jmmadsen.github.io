@@ -35,14 +35,14 @@ class GSA extends Component {
         <Modal.Body>
           <Container>
             <Row>
-              Currently, I am the lead AWS architect for a GSA project to automate their various procurement services. My main
+              Lead AWS architect for a GSA project to automate their various procurement services. My main
               responsibilities for this role were designing the networking and application architecture for AWS, provisioning the various
               AWS services (EC2 instances, ECR, ELB, Postgres RDS, etc.), designing a monitoring system to capture all critical service logs,
               and working with the leads of the UI and AI/ML development teams to orchestrate and deploy their applciations.
             </Row>
             <br/>
             <Row>
-              I am working with the following technologies for this role:
+              I worked with the following technologies for this role:
             </Row>
             <br/>
             <Row>
