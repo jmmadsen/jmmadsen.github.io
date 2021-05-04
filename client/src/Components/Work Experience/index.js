@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Container, Row, Col, Card, Tabs, Tab } from 'react-bootstrap';
 import Img from 'react-image';
+import Socium from './socium';
 import Vault from './vault';
 import GSA from './gsa';
 import VA from './va';
@@ -19,6 +20,7 @@ import airforce from '../../images/airforce.png';
 import car from '../../images/car.png';
 import pentagon from '../../images/pentagon.png';
 import blankIcon from '../../images/blankIcon.png';
+import socium from '../../images/dscu_seal.png';
 
 
 class Experience extends Component {
@@ -28,6 +30,7 @@ class Experience extends Component {
 
     this.state = {
       index: -1,
+      sociumOpen: false,
       isOpen: {
         vault: false,
         gsa: false,
@@ -154,6 +157,12 @@ class Experience extends Component {
 
   }
 
+  sociumClick = () => {
+
+    this.setState({ sociumOpen: !this.state.sociumOpen })
+
+  }
+
   render = () => {
 
     const { workExperience } = this.state;
@@ -170,11 +179,35 @@ class Experience extends Component {
         <Container fluid>
           <h1>Work Experience</h1>
           <br/>
-          <Tabs defaultActiveKey="ibm" style={{ color: 'green' }}>
-            <Tab eventKey="deloitte" title="Deloitte" disabled>
-              <Col>
-                Mar. 2021 - Present
-              </Col>
+          <Tabs defaultActiveKey="deloitte" style={{ color: 'green' }}>
+            <Tab eventKey="deloitte" title="Deloitte">
+              <Row>
+                <Col>
+                  Mar. 2021 - Present
+                </Col>
+              </Row>
+              <Row className="scrolling-wrapper flex-row flex-nowrap mt-4 pb-4">
+                <Col>
+                  <Card
+                    bg="success"
+                  >
+                    <Card.Header as="h3" style={{ backgroundColor: '#383d47' }}>DSCA - Socium</Card.Header>
+                      <Card.Body style={{ backgroundColor: '#383d47' }}>
+                        <Card.Title>Mar. 2021 - Present</Card.Title>
+                        {Pic(socium)}
+                        <Card.Text>
+                          Product Owner
+                        </Card.Text>
+                        <Button
+                          variant="success"
+                          onClick={ () => this.sociumClick() }
+                        >
+                          Learn More
+                        </Button>
+                      </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
             </Tab>
             <Tab eventKey="ibm" title="IBM">
               <Row>
@@ -209,6 +242,7 @@ class Experience extends Component {
                     )
                   })
                 }
+                <Socium isOpen={this.state.sociumOpen} modalClick={this.sociumClick}/>
                 <Vault isOpen={this.state.isOpen} modalClick={this.modalClick}/>
                 <GSA isOpen={this.state.isOpen} modalClick={this.modalClick}/>
                 <VA isOpen={this.state.isOpen} modalClick={this.modalClick}/>
